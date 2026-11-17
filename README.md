@@ -1,5 +1,7 @@
 # OpenPike models
 
+[![Validate](https://github.com/OpenPike/models/actions/workflows/validate.yml/badge.svg)](https://github.com/OpenPike/models/actions/workflows/validate.yml)
+
 [OpenPike](https://openpike.dev) is a bring-your-own-key gateway for LLM APIs: your agents send requests to one endpoint, OpenPike forwards them with your own provider keys and gives you per-agent budgets, kill switches and spend reports. This repo holds the provider catalog and the price table the gateway uses to route requests and compute what each one cost.
 
 Both files are the ones OpenPike runs in production. They are published here from OpenPike's main repository on every change, so what you read is what the gateway uses. Found a wrong or missing price? See [CONTRIBUTING.md](CONTRIBUTING.md).
