@@ -1,0 +1,59 @@
+name: Confirm a provider
+description: Give us the evidence to switch on a provider from catalog.json.
+title: "Confirm provider: "
+labels: ["provider"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping. Check the [tracking issue](https://github.com/OpenPike/models/issues/1) first: someone may already be on it.
+
+        **Never paste an API key**, not even an expired one. Replace it with `REDACTED` everywhere, including in headers.
+  - type: input
+    id: slug
+    attributes:
+      label: Provider slug
+      description: The `slug` from catalog.json, for example `cohere`.
+    validations:
+      required: true
+  - type: input
+    id: docs
+    attributes:
+      label: Link to the provider's own API docs
+      description: The page that shows the base URL. Not a blog post or another router's docs.
+      placeholder: https://docs.example.com/api/chat-completions
+    validations:
+      required: true
+  - type: input
+    id: base-url
+    attributes:
+      label: OpenAI-compatible base URL
+      description: The part before `/chat/completions`.
+      placeholder: https://api.example.com/v1
+    validations:
+      required: true
+  - type: dropdown
+    id: auth
+    attributes:
+      label: How is the key sent?
+      options:
+        - "bearer (Authorization: Bearer <key>)"
+        - "other (explain below)"
+    validations:
+      required: true
+  - type: textarea
+    id: per-customer
+    attributes:
+      label: Is anything in the address per customer?
+      description: For example an account ID, a project, or a region you pick. If so, say what; it needs a code change rather than a catalog edit.
+      placeholder: "No, the same address for everyone."
+    validations:
+      required: true
+  - type: textarea
+    id: curl
+    attributes:
+      label: Redacted curl response (optional)
+      description: |
+        If you have a key: the request and response from `POST <baseUrl>/chat/completions`, showing a 200 with a `usage` block. With this and the docs link, we can switch the provider on as Available.
+        **Remove the key first.** Use `REDACTED` in its place.
+      render: shell

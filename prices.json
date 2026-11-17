@@ -690,6 +690,218 @@
       "note": "Text input rate; audio input and cache storage per hour are not applied.",
       "source": "https://aistudio.google.com/docs/pricing",
       "as_of": "2026-11-16"
+    },
+    "moonshotai/kimi-k3.1-pro": {
+      "input": 2,
+      "output": 10,
+      "cached_input": 0.2,
+      "cache_write": 2,
+      "cache_write_1h": 4,
+      "source": "https://platform.kimi.ai/docs/pricing/chat",
+      "as_of": "2026-11-17"
+    },
+    "moonshotai/kimi-k3.1-pro-highspeed": {
+      "input": 4,
+      "output": 20,
+      "cached_input": 0.2,
+      "cache_write": 4,
+      "cache_write_1h": 8,
+      "source": "https://platform.kimi.ai/docs/pricing/chat",
+      "as_of": "2026-11-17"
+    },
+    "moonshotai/kimi-k3": {
+      "input": 3,
+      "output": 15,
+      "cached_input": 0.3,
+      "cache_write": 3,
+      "cache_write_1h": 6,
+      "source": "https://platform.kimi.ai/docs/pricing/chat",
+      "as_of": "2026-11-17"
+    },
+    "moonshotai/kimi-k2.7-code": {
+      "input": 0.95,
+      "output": 4,
+      "cached_input": 0.19,
+      "source": "https://platform.kimi.ai/docs/pricing/chat",
+      "as_of": "2026-11-17",
+      "note": "K2 series: closed to new users since 2026-10-31 and retired by the end of December 2026, per the pricing page."
+    },
+    "moonshotai/kimi-k2.7-code-highspeed": {
+      "input": 1.9,
+      "output": 8,
+      "cached_input": 0.38,
+      "source": "https://platform.kimi.ai/docs/pricing/chat",
+      "as_of": "2026-11-17",
+      "note": "K2 series: closed to new users since 2026-10-31 and retired by the end of December 2026, per the pricing page."
+    },
+    "moonshotai/kimi-k2.6": {
+      "input": 0.95,
+      "output": 4,
+      "cached_input": 0.16,
+      "source": "https://platform.kimi.ai/docs/pricing/chat",
+      "as_of": "2026-11-17",
+      "note": "K2 series: closed to new users since 2026-10-31 and retired by the end of December 2026, per the pricing page."
+    },
+    "novita/deepseek/deepseek-v4.1-flash": {
+      "input": 0.3,
+      "output": 1.2,
+      "cached_input": 0.006,
+      "source": "https://novita.ai/pricing",
+      "as_of": "2026-11-17"
+    },
+    "novita/deepseek/deepseek-v4-pro": {
+      "input": 1.6,
+      "output": 3.2,
+      "cached_input": 0.135,
+      "source": "https://novita.ai/pricing",
+      "as_of": "2026-11-17"
+    },
+    "novita/moonshotai/kimi-k3.1-pro": {
+      "input": 2,
+      "output": 10,
+      "cached_input": 0.2,
+      "cache_write": 2,
+      "cache_write_1h": 4,
+      "source": "https://novita.ai/pricing",
+      "as_of": "2026-11-17"
+    },
+    "novita/moonshotai/kimi-k3": {
+      "input": 3,
+      "output": 15,
+      "cached_input": 0.3,
+      "cache_write": 3,
+      "cache_write_1h": 6,
+      "source": "https://novita.ai/pricing",
+      "as_of": "2026-11-17"
+    },
+    "novita/zai-org/glm-5.3": {
+      "input": 1.4,
+      "output": 4.4,
+      "cached_input": 0.26,
+      "source": "https://novita.ai/pricing",
+      "as_of": "2026-11-17"
+    },
+    "novita/zai-org/glm-5.3-flash": {
+      "input": 0.15,
+      "output": 0.5,
+      "cached_input": 0.03,
+      "source": "https://novita.ai/pricing",
+      "as_of": "2026-11-17"
+    },
+    "novita/qwen/qwen4-max": {
+      "input": 1.413,
+      "output": 4.24,
+      "cached_input": 0.071,
+      "cache_write": 1.767,
+      "cache_write_1h": 2.827,
+      "source": "https://novita.ai/pricing",
+      "as_of": "2026-11-17"
+    },
+    "novita/qwen/qwen3.8-max": {
+      "input": 2,
+      "output": 6,
+      "cached_input": 0.25,
+      "cache_write": 2.5,
+      "source": "https://novita.ai/pricing",
+      "as_of": "2026-11-17"
+    },
+    "novita/qwen/qwen3.8-flash": {
+      "input": 0.15,
+      "output": 0.47,
+      "cached_input": 0.016,
+      "cache_write": 0.2,
+      "source": "https://novita.ai/pricing",
+      "as_of": "2026-11-17"
+    },
+    "novita/tencent/hy4-flash": {
+      "input": 0.07,
+      "output": 0.281,
+      "cached_input": 0.003,
+      "source": "https://novita.ai/pricing",
+      "as_of": "2026-11-17"
+    },
+    "novita/stepfun/step-3.7-flash": {
+      "input": 0.2,
+      "output": 1.15,
+      "cached_input": 0.04,
+      "source": "https://novita.ai/pricing",
+      "as_of": "2026-11-17"
+    },
+    "sambanova/Meta-Llama-3.3-70B-Instruct": {
+      "input": 0.6,
+      "output": 1.2,
+      "source": "https://cloud.sambanova.ai/plans/pricing",
+      "as_of": "2026-11-17"
+    },
+    "sambanova/gpt-oss-120b": {
+      "input": 0.22,
+      "output": 0.59,
+      "source": "https://cloud.sambanova.ai/plans/pricing",
+      "as_of": "2026-11-17"
+    },
+    "z-ai/glm-5.3": {
+      "input": 1.4,
+      "output": 4.4,
+      "cached_input": 0.26,
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "as_of": "2026-11-17",
+      "note": "Cached input storage is listed as limited-time free and is not priced."
+    },
+    "z-ai/glm-5.3-flash": {
+      "input": 0.15,
+      "output": 0.5,
+      "cached_input": 0.03,
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "as_of": "2026-11-17",
+      "note": "Cached input storage is listed as limited-time free and is not priced."
+    },
+    "z-ai/glm-5.3-flashx": {
+      "input": 0.37,
+      "output": 1.25,
+      "cached_input": 0.075,
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "as_of": "2026-11-17",
+      "note": "Cached input storage is listed as limited-time free and is not priced."
+    },
+    "z-ai/glm-5.2": {
+      "input": 1.4,
+      "output": 4.4,
+      "cached_input": 0.26,
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "as_of": "2026-11-17",
+      "note": "Cached input storage is listed as limited-time free and is not priced."
+    },
+    "z-ai/glm-5.1": {
+      "input": 1.4,
+      "output": 4.4,
+      "cached_input": 0.26,
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "as_of": "2026-11-17",
+      "note": "Cached input storage is listed as limited-time free and is not priced."
+    },
+    "z-ai/glm-5": {
+      "input": 1,
+      "output": 3.2,
+      "cached_input": 0.2,
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "as_of": "2026-11-17",
+      "note": "Cached input storage is listed as limited-time free and is not priced."
+    },
+    "z-ai/glm-4.7": {
+      "input": 0.6,
+      "output": 2.2,
+      "cached_input": 0.11,
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "as_of": "2026-11-17",
+      "note": "Cached input storage is listed as limited-time free and is not priced."
+    },
+    "z-ai/glm-4.6": {
+      "input": 0.6,
+      "output": 2.2,
+      "cached_input": 0.11,
+      "source": "https://docs.z.ai/guides/overview/pricing",
+      "as_of": "2026-11-17",
+      "note": "Cached input storage is listed as limited-time free and is not priced."
     }
   }
 }

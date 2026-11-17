@@ -1,0 +1,35 @@
+name: Wrong or missing price
+description: Report a price that is wrong, missing or out of date.
+title: "Price: "
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Model name
+      description: As in prices.json, `<provider slug>/<model id>`.
+      placeholder: openai/gpt-5
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: The provider's own pricing page
+      description: Not a reseller, aggregator or blog post.
+      placeholder: https://example.com/pricing
+    validations:
+      required: true
+  - type: textarea
+    id: price
+    attributes:
+      label: The price
+      description: US dollars per 1 million tokens. Input, output, and cached input or cache write prices if the page lists them. Say if it is a future change and from which date.
+      placeholder: "input 1.25, output 10, cached input 0.125"
+    validations:
+      required: true
+  - type: input
+    id: as-of
+    attributes:
+      label: Date you read the page
+      placeholder: "2026-11-17"
+    validations:
+      required: true

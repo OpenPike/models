@@ -612,8 +612,9 @@
       ],
       "auth": "bearer",
       "baseUrl": "https://api.moonshot.ai/v1",
-      "verify": true,
-      "enabled": false
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://platform.kimi.ai/docs/api/chat. Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "morph",
@@ -650,9 +651,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": "https://api.studio.nebius.com/v1",
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://api.tokenfactory.nebius.com/v1",
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://docs.tokenfactory.nebius.com/. Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "nex-agi",
@@ -677,8 +679,9 @@
       ],
       "auth": "bearer",
       "baseUrl": "https://api.novita.ai/openai",
-      "verify": true,
-      "enabled": false
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://docs.novita.ai/guides/llm-api. Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "nvidia",
@@ -794,8 +797,9 @@
       ],
       "auth": "bearer",
       "baseUrl": "https://api.sambanova.ai/v1",
-      "verify": true,
-      "enabled": false
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://docs.sambanova.ai/docs/en/get-started/api-keys-urls. Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "seed",
@@ -820,8 +824,9 @@
       ],
       "auth": "bearer",
       "baseUrl": "https://api.siliconflow.com/v1",
-      "verify": true,
-      "enabled": false
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://docs.siliconflow.com/en/api-reference/chat-completions/chat-completions. Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "stepfun",
@@ -937,8 +942,9 @@
       ],
       "auth": "bearer",
       "baseUrl": "https://api.z.ai/api/paas/v4",
-      "verify": true,
-      "enabled": false
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://docs.z.ai/guides/develop/openai/python. Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "amazon-bedrock",

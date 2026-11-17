@@ -15,9 +15,20 @@ This repo is published from OpenPike's main repository. When your pull request i
 5. Model names (the keys in `prices.json`) are `<provider slug>/<model id>`, with the model id exactly as the provider's API takes it.
 6. Rates are US dollars per 1 million tokens. Leave out `cached_input`, `cache_write` or `cache_write_1h` when the provider does not offer that price (the input price is used).
 
-## Adding a provider
+## Adding or confirming a provider
 
-Add it to `catalog.json` with `"enabled": false` and `"verify": true`, a `baseUrl` from the provider's own API documentation (or `null` if you cannot find one), and a link to that documentation in the pull request. A new provider stays `verify: true` until OpenPike confirms it with a live request; we flip it.
+Start from the [tracking issue](https://github.com/OpenPike/models/issues/1), which lists every provider still switched off and who is on it. For a provider with no issue of its own, open one with the **Confirm a provider** form (New issue): it asks for exactly the evidence below.
+
+A new provider goes into `catalog.json` with `"enabled": false` and `"verify": true`, and a `baseUrl` from the provider's own API documentation (or `null` if you cannot find one). We never guess an address.
+
+**What switches a provider on.** You do not need OpenPike to hold a key for it. We switch it on as **Available** with:
+
+- a link to the provider's own API docs showing the base URL, and
+- a redacted `curl` response from `POST <baseUrl>/chat/completions` with a 200 and a `usage` block. **Never paste a key**; replace it with `REDACTED`.
+
+Before porting, we also check that the address answers a request without a key with 401 or 403 (not 404 or a DNS error). Then the entry gets `"enabled": true` and `"verify": false`. **Tested** on the docs Providers page is reserved for providers that passed OpenPike's own live test, recorded in `liveTested`; leave that field alone.
+
+If the address has something per customer in it (an account ID, a project, a region you pick), say so: that needs a code change rather than a catalog edit.
 
 ## Before you open the pull request
 
