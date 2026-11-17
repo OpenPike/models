@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/OpenPike/models/blob/main/catalog.schema.json",
+  "title": "OpenPike provider catalog",
+  "description": "Every LLM provider OpenPike knows about: whether it can receive requests, which API formats it speaks, where its API lives and how to authenticate.",
+  "type": "object",
+  "required": ["version", "providers"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string", "description": "Path or URL of this schema, for editors." },
+    "$comment": { "type": "string", "description": "Notes for people editing the file." },
+    "version": { "type": "integer", "minimum": 1, "description": "File format version." },
+    "providers": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/provider" },
+      "description": "One entry per provider. Slugs are unique."
+    }
+  },
+  "$defs": {
+    "format": {
+      "type": "string",
+      "enum": ["chat", "messages", "systemone"],
+      "description": "An API format: chat (OpenAI Chat Completions, /v1/chat/completions), messages (Anthropic Messages, /v1/messages), systemone (TypeSafe System One, /v1/systemone)."
+    },
+    "httpsUrl": { "type": "string", "format": "uri", "pattern": "^https://[^\\s]+[^/\\s]$" },
+    "provider": {
+      "type": "object",
+      "required": ["slug", "name", "tier", "enabled"],
+      "additionalProperties": false,
+      "properties": {
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "description": "The provider part of a model name, as in <slug>/<model id>."
+        },
+        "name": { "type": "string", "minLength": 1, "description": "Display name." },
+        "tier": {
+          "type": "string",
+          "enum": ["native", "openai-compatible", "special", "planned", "excluded"],
+          "description": "How much work the provider needs: native (first-class), openai-compatible (works through the OpenAI-compatible adapter), special (needs its own sign-in or adapter), planned, or excluded (does not serve chat models)."
+        },
+        "enabled": { "type": "boolean", "description": "True when the provider may receive requests (if it is also verified and has adapter, baseUrl, formats and auth)." },
+        "adapter": {
+          "type": "string",
+          "enum": ["openai", "openai-compatible", "anthropic", "systemone"],
+          "description": "The gateway adapter that talks to the provider."
+        },
+        "baseUrl": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "pattern": "^https://[^\\s]+[^/\\s]$",
+          "description": "API base URL, without a trailing slash, from the provider's own documentation. null while it is not known yet (then verify is true)."
+        },
+        "formats": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/format" },
+          "description": "API formats the provider serves natively."
+        },
+        "auth": { "type": "string", "enum": ["bearer", "x-api-key"], "description": "How the provider key is sent: Authorization: Bearer, or an x-api-key header." },
+        "verify": {
+          "type": "boolean",
+          "description": "True while the base URL is unconfirmed. The provider stays disabled until a live request succeeds, whatever enabled says."
+        },
+        "messagesBaseUrl": { "$ref": "#/$defs/httpsUrl", "description": "Base URL of an Anthropic-compatible endpoint, for a provider that is not Anthropic but also serves the messages format." },
+        "messagesVerify": { "type": "boolean", "description": "True while messagesBaseUrl is unconfirmed: the messages format stays off until a live request succeeds." },
+        "rejectsStreamOptions": { "type": "boolean", "description": "True when the provider rejects stream_options, so the gateway does not send it." },
+        "notes": { "type": "string", "description": "Free text for people reading the catalog." },
+        "liveTested": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": false,
+          "properties": {
+            "chat": { "type": "string", "format": "date" },
+            "messages": { "type": "string", "format": "date" },
+            "systemone": { "type": "string", "format": "date" }
+          },
+          "description": "Per format, the last date (YYYY-MM-DD) that format passed OpenPike's live test against the real provider."
+        }
+      }
+    }
+  }
+}

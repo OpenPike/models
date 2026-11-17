@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/OpenPike/models/blob/main/prices.schema.json",
+  "title": "OpenPike model prices",
+  "description": "Prices in USD per 1 million tokens, keyed by provider/model. Only prices read from the provider's own pricing page.",
+  "type": "object",
+  "required": ["version", "prices"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string", "description": "Path or URL of this schema, for editors." },
+    "$comment": { "type": "string", "description": "Notes for people editing the file." },
+    "version": { "type": "integer", "minimum": 1, "description": "File format version." },
+    "prices": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*/[^\\s]+$",
+        "description": "<provider slug>/<model id>, exactly as a request names the model."
+      },
+      "additionalProperties": { "$ref": "#/$defs/modelPrice" }
+    }
+  },
+  "$defs": {
+    "rate": { "type": "number", "minimum": 0, "description": "USD per 1M tokens." },
+    "input": { "$ref": "#/$defs/rate", "description": "Uncached input (prompt) tokens." },
+    "output": { "$ref": "#/$defs/rate", "description": "Output tokens, reasoning tokens included." },
+    "cached_input": { "$ref": "#/$defs/rate", "description": "Input tokens read from the provider's prompt cache. Defaults to input." },
+    "cache_write": { "$ref": "#/$defs/rate", "description": "Input tokens written to the cache (5-minute cache). Defaults to input." },
+    "cache_write_1h": { "$ref": "#/$defs/rate", "description": "Input tokens written to the 1-hour cache, when the response reports them separately. Defaults to cache_write." },
+    "tier": {
+      "type": "object",
+      "required": ["above_prompt_tokens", "input", "output"],
+      "additionalProperties": false,
+      "description": "Rates that apply instead of the base rates when the whole prompt (cache reads and writes included) is above above_prompt_tokens. The highest matching tier wins.",
+      "properties": {
+        "above_prompt_tokens": { "type": "integer", "minimum": 0 },
+        "input": { "$ref": "#/$defs/input" },
+        "output": { "$ref": "#/$defs/output" },
+        "cached_input": { "$ref": "#/$defs/cached_input" },
+        "cache_write": { "$ref": "#/$defs/cache_write" },
+        "cache_write_1h": { "$ref": "#/$defs/cache_write_1h" }
+      }
+    },
+    "tiers": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/tier" },
+      "description": "Prompt-length tiers, each with a different above_prompt_tokens."
+    },
+    "change": {
+      "type": "object",
+      "required": ["from", "input", "output"],
+      "additionalProperties": false,
+      "description": "A price change the provider has announced. Its rates (and tiers, when given) replace the base ones from 00:00 UTC on the from day.",
+      "properties": {
+        "from": { "type": "string", "format": "date", "description": "First day (UTC) the new rates apply." },
+        "input": { "$ref": "#/$defs/input" },
+        "output": { "$ref": "#/$defs/output" },
+        "cached_input": { "$ref": "#/$defs/cached_input" },
+        "cache_write": { "$ref": "#/$defs/cache_write" },
+        "cache_write_1h": { "$ref": "#/$defs/cache_write_1h" },
+        "tiers": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/tier" },
+          "description": "Replaces the base tiers from that day. An empty list removes them; leave it out to keep them."
+        }
+      }
+    },
+    "modelPrice": {
+      "type": "object",
+      "required": ["input", "output", "source", "as_of"],
+      "additionalProperties": false,
+      "properties": {
+        "input": { "$ref": "#/$defs/input" },
+        "output": { "$ref": "#/$defs/output" },
+        "cached_input": { "$ref": "#/$defs/cached_input" },
+        "cache_write": { "$ref": "#/$defs/cache_write" },
+        "cache_write_1h": { "$ref": "#/$defs/cache_write_1h" },
+        "tiers": { "$ref": "#/$defs/tiers" },
+        "changes": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/change" },
+          "description": "Announced price changes, oldest first, each with a later from date."
+        },
+        "source": { "type": "string", "format": "uri", "pattern": "^https://", "description": "The provider's own pricing page." },
+        "as_of": { "type": "string", "format": "date", "description": "The day the price was read from source." },
+        "note": { "type": "string", "description": "Free text, for example how a discount or region is handled." }
+      }
+    }
+  }
+}

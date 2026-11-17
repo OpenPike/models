@@ -1,0 +1,1315 @@
+{
+  "$schema": "./catalog.schema.json",
+  "$comment": "Provider catalog. Source list: OpenRouter GET /api/v1/providers, fetched 2026-11-15. enabled=true providers ship in Phase 1. verify=true means the base URL must be confirmed with a live request before enabling. liveTested records, per format, the last date that format passed the live smoke test (pnpm smoke) against the real provider; the docs show those providers as Tested.",
+  "version": 1,
+  "providers": [
+    {
+      "slug": "anthropic",
+      "name": "Anthropic",
+      "tier": "native",
+      "enabled": true,
+      "adapter": "anthropic",
+      "baseUrl": "https://api.anthropic.com/v1",
+      "formats": [
+        "messages"
+      ],
+      "auth": "x-api-key",
+      "verify": false,
+      "liveTested": {
+        "messages": "2026-11-16"
+      }
+    },
+    {
+      "slug": "deepseek",
+      "name": "DeepSeek",
+      "tier": "native",
+      "enabled": true,
+      "adapter": "openai-compatible",
+      "baseUrl": "https://api.deepseek.com",
+      "formats": [
+        "chat",
+        "messages"
+      ],
+      "auth": "bearer",
+      "verify": false,
+      "liveTested": {
+        "chat": "2026-11-16",
+        "messages": "2026-11-16"
+      },
+      "messagesBaseUrl": "https://api.deepseek.com/anthropic",
+      "notes": "DeepSeek also serves an Anthropic-compatible endpoint at messagesBaseUrl, confirmed live on 2026-11-15 with deepseek-flash (non-streaming and streaming)."
+    },
+    {
+      "slug": "google-ai-studio",
+      "name": "Google AI Studio",
+      "tier": "native",
+      "enabled": true,
+      "adapter": "openai-compatible",
+      "baseUrl": "https://generativelanguage.googleapis.com/v1beta/openai",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "verify": false,
+      "notes": "Gemini via Google's OpenAI-compatible endpoint. Native Gemini adapter is a later phase."
+    },
+    {
+      "slug": "openai",
+      "name": "OpenAI",
+      "tier": "native",
+      "enabled": true,
+      "adapter": "openai",
+      "baseUrl": "https://api.openai.com/v1",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "verify": false
+    },
+    {
+      "slug": "openrouter",
+      "name": "OpenRouter",
+      "tier": "native",
+      "enabled": true,
+      "adapter": "openai-compatible",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "formats": [
+        "chat",
+        "systemone"
+      ],
+      "auth": "bearer",
+      "verify": false,
+      "notes": "Customers may bring an OpenRouter key as a catch-all upstream. Not in OpenRouter's own provider list."
+    },
+    {
+      "slug": "typesafe",
+      "name": "TypeSafe",
+      "tier": "native",
+      "enabled": true,
+      "adapter": "systemone",
+      "baseUrl": "https://api.typesafe.ai",
+      "formats": [
+        "systemone"
+      ],
+      "auth": "bearer",
+      "verify": false,
+      "notes": "Jev decision models. Native System One API: POST /v1/systemone with { model, state, questions }. Not a chat model. Official API may be waitlisted; OpenRouter, DigitalOcean and others also serve /v1/systemone."
+    },
+    {
+      "slug": "cerebras",
+      "name": "Cerebras",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": "https://api.cerebras.ai/v1",
+      "verify": false,
+      "enabled": true
+    },
+    {
+      "slug": "deepinfra",
+      "name": "DeepInfra",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": "https://api.deepinfra.com/v1/openai",
+      "verify": false,
+      "enabled": true
+    },
+    {
+      "slug": "fireworks",
+      "name": "Fireworks",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": "https://api.fireworks.ai/inference/v1",
+      "verify": false,
+      "enabled": true
+    },
+    {
+      "slug": "groq",
+      "name": "Groq",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": "https://api.groq.com/openai/v1",
+      "verify": false,
+      "enabled": true
+    },
+    {
+      "slug": "mistral",
+      "name": "Mistral",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": "https://api.mistral.ai/v1",
+      "verify": false,
+      "enabled": true
+    },
+    {
+      "slug": "perplexity",
+      "name": "Perplexity",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": "https://api.perplexity.ai",
+      "verify": false,
+      "enabled": true
+    },
+    {
+      "slug": "together",
+      "name": "Together",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": "https://api.together.xyz/v1",
+      "verify": false,
+      "enabled": true
+    },
+    {
+      "slug": "xai",
+      "name": "xAI",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": "https://api.x.ai/v1",
+      "verify": false,
+      "enabled": true
+    },
+    {
+      "slug": "ai21",
+      "name": "AI21",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "aion-labs",
+      "name": "AionLabs",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "akashml",
+      "name": "AkashML",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "alibaba",
+      "name": "Alibaba",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "ambient",
+      "name": "Ambient",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "arcee-ai",
+      "name": "Arcee AI",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "atlas-cloud",
+      "name": "AtlasCloud",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "avian",
+      "name": "Avian",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "baidu",
+      "name": "Baidu",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "baseten",
+      "name": "BaseTen",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "chutes",
+      "name": "Chutes",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "cirrascale",
+      "name": "Cirrascale",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "cloudflare",
+      "name": "Cloudflare",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "cohere",
+      "name": "Cohere",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "coreweave",
+      "name": "CoreWeave",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "crusoe",
+      "name": "Crusoe",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "digitalocean",
+      "name": "DigitalOcean",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "featherless",
+      "name": "Featherless",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "friendli",
+      "name": "Friendli",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "gmicloud",
+      "name": "GMICloud",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "inception",
+      "name": "Inception",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "inference-net",
+      "name": "InferenceNet",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "infermatic",
+      "name": "Infermatic",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "io-net",
+      "name": "Io Net",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "ionstream",
+      "name": "Ionstream",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "liquid",
+      "name": "Liquid",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "mancer",
+      "name": "Mancer 2",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "meta",
+      "name": "Meta",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "minimax",
+      "name": "Minimax",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "modal",
+      "name": "Modal",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "modular",
+      "name": "Modular",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "moonshotai",
+      "name": "Moonshot AI",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": "https://api.moonshot.ai/v1",
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "morph",
+      "name": "Morph",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "near-ai",
+      "name": "Near AI",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "nebius",
+      "name": "Nebius",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": "https://api.studio.nebius.com/v1",
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "nex-agi",
+      "name": "Nex AGI",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "novita",
+      "name": "Novita",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": "https://api.novita.ai/openai",
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "nvidia",
+      "name": "Nvidia",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "parasail",
+      "name": "Parasail",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "phala",
+      "name": "Phala",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "poolside",
+      "name": "Poolside",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "primeintellect",
+      "name": "PrimeIntellect",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "reka",
+      "name": "Reka",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "relace",
+      "name": "Relace",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "sakana",
+      "name": "Sakana AI",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "sambanova",
+      "name": "SambaNova",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": "https://api.sambanova.ai/v1",
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "seed",
+      "name": "Seed",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "siliconflow",
+      "name": "SiliconFlow",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": "https://api.siliconflow.com/v1",
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "stepfun",
+      "name": "StepFun",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "streamlake",
+      "name": "StreamLake",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "tencent",
+      "name": "Tencent",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "thinkingmachines",
+      "name": "Thinking Machines",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "upstage",
+      "name": "Upstage",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "venice",
+      "name": "Venice",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "wafer",
+      "name": "Wafer",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "xiaomi",
+      "name": "Xiaomi",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "z-ai",
+      "name": "Z.AI",
+      "tier": "openai-compatible",
+      "adapter": "openai-compatible",
+      "formats": [
+        "chat"
+      ],
+      "auth": "bearer",
+      "baseUrl": "https://api.z.ai/api/paas/v4",
+      "verify": true,
+      "enabled": false
+    },
+    {
+      "slug": "amazon-bedrock",
+      "name": "Amazon Bedrock",
+      "tier": "special",
+      "enabled": false,
+      "notes": "AWS SigV4 auth"
+    },
+    {
+      "slug": "amazon-nova",
+      "name": "Amazon Nova",
+      "tier": "special",
+      "enabled": false,
+      "notes": "AWS SigV4 auth"
+    },
+    {
+      "slug": "azure",
+      "name": "Azure",
+      "tier": "special",
+      "enabled": false,
+      "notes": "Azure deployment URLs and api-version"
+    },
+    {
+      "slug": "clarifai",
+      "name": "Clarifai",
+      "tier": "special",
+      "enabled": false,
+      "notes": "Custom API shape"
+    },
+    {
+      "slug": "claude-on-aws",
+      "name": "Claude Platform on AWS",
+      "tier": "special",
+      "enabled": false,
+      "notes": "AWS auth"
+    },
+    {
+      "slug": "databricks",
+      "name": "Databricks",
+      "tier": "special",
+      "enabled": false,
+      "notes": "Workspace-specific host"
+    },
+    {
+      "slug": "google-vertex",
+      "name": "Google Vertex AI",
+      "tier": "special",
+      "enabled": false,
+      "notes": "Google service account OAuth"
+    },
+    {
+      "slug": "ollama",
+      "name": "Ollama",
+      "tier": "special",
+      "enabled": false,
+      "notes": "Self-hosted, customer supplies URL"
+    },
+    {
+      "slug": "open-inference",
+      "name": "OpenInference",
+      "tier": "special",
+      "enabled": false,
+      "notes": "Unclear API shape"
+    },
+    {
+      "slug": "respan",
+      "name": "Respan",
+      "tier": "special",
+      "enabled": false,
+      "notes": "Is itself a gateway"
+    },
+    {
+      "slug": "antdigital",
+      "name": "Ant Digital",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "cosine",
+      "name": "Cosine",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "crucible",
+      "name": "Crucible",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "darkbloom",
+      "name": "Darkbloom",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "dekallm",
+      "name": "DekaLLM",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "doubleword",
+      "name": "Doubleword",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "inceptron",
+      "name": "Inceptron",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "inferact-vllm",
+      "name": "Inferact vLLM",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "inflection",
+      "name": "Inflection",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "kt",
+      "name": "KT",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "makora",
+      "name": "Makora",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "mara",
+      "name": "Mara",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "modelrun",
+      "name": "ModelRun",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "nextbit",
+      "name": "NextBit",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "parallel",
+      "name": "Parallel",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "pareto-alpha",
+      "name": "ParetoAlpha",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "particle-ai",
+      "name": "Particle AI",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "pearl-research",
+      "name": "Pearl Research",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "perceptron",
+      "name": "Perceptron",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "primalabs",
+      "name": "PrimaLabs",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "quiver",
+      "name": "Quiver",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "recursive",
+      "name": "Recursive",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "river",
+      "name": "River",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "sail-research",
+      "name": "Sail Research",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "scaledown",
+      "name": "ScaleDown",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "sourceful",
+      "name": "Sourceful",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "switchpoint",
+      "name": "Switchpoint",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "tenstorrent",
+      "name": "Tenstorrent",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "unbiased",
+      "name": "Unbiased",
+      "tier": "planned",
+      "enabled": false,
+      "notes": "Unknown API shape; research before adding"
+    },
+    {
+      "slug": "assemblyai",
+      "name": "AssemblyAI",
+      "tier": "excluded",
+      "enabled": false,
+      "notes": "speech"
+    },
+    {
+      "slug": "black-forest-labs",
+      "name": "Black Forest Labs",
+      "tier": "excluded",
+      "enabled": false,
+      "notes": "image"
+    },
+    {
+      "slug": "decart",
+      "name": "Decart",
+      "tier": "excluded",
+      "enabled": false,
+      "notes": "video"
+    },
+    {
+      "slug": "deepgram",
+      "name": "Deepgram",
+      "tier": "excluded",
+      "enabled": false,
+      "notes": "speech"
+    },
+    {
+      "slug": "elevenlabs",
+      "name": "ElevenLabs",
+      "tier": "excluded",
+      "enabled": false,
+      "notes": "audio"
+    },
+    {
+      "slug": "fake-provider",
+      "name": "FakeProvider",
+      "tier": "excluded",
+      "enabled": false,
+      "notes": "OpenRouter test provider"
+    },
+    {
+      "slug": "fish-audio",
+      "name": "Fish Audio",
+      "tier": "excluded",
+      "enabled": false,
+      "notes": "audio"
+    },
+    {
+      "slug": "heygen",
+      "name": "HeyGen",
+      "tier": "excluded",
+      "enabled": false,
+      "notes": "video"
+    },
+    {
+      "slug": "krea",
+      "name": "Krea",
+      "tier": "excluded",
+      "enabled": false,
+      "notes": "image"
+    },
+    {
+      "slug": "recraft",
+      "name": "Recraft",
+      "tier": "excluded",
+      "enabled": false,
+      "notes": "image"
+    },
+    {
+      "slug": "runway",
+      "name": "Runway",
+      "tier": "excluded",
+      "enabled": false,
+      "notes": "video"
+    },
+    {
+      "slug": "speechify",
+      "name": "Speechify",
+      "tier": "excluded",
+      "enabled": false,
+      "notes": "audio"
+    },
+    {
+      "slug": "stealth",
+      "name": "Stealth",
+      "tier": "excluded",
+      "enabled": false,
+      "notes": "OpenRouter placeholder for unnamed models"
+    },
+    {
+      "slug": "voyageai",
+      "name": "VoyageAI by MongoDB",
+      "tier": "excluded",
+      "enabled": false,
+      "notes": "embeddings and rerank"
+    }
+  ]
+}

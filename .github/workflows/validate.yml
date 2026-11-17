@@ -1,0 +1,25 @@
+# Checks catalog.json and prices.json against their schemas and the gateway's rules.
+# No install: scripts/validate.mjs uses only Node.
+
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+      - run: node scripts/validate.mjs
