@@ -33,6 +33,12 @@ export function checkCatalog(catalog, schema) {
     if (p.messagesBaseUrl !== undefined && p.adapter === "anthropic") {
       errors.push(`${path}: "messagesBaseUrl" is for providers whose adapter is not anthropic`);
     }
+    if (p.responsesVerify !== undefined && !(p.formats ?? []).includes("responses")) {
+      errors.push(`${path}: "responsesVerify" needs "responses" in formats`);
+    }
+    if ((p.formats ?? []).includes("responses") && p.adapter !== undefined && p.adapter !== "openai" && p.adapter !== "openai-compatible") {
+      errors.push(`${path}: the responses format needs the openai or openai-compatible adapter`);
+    }
     if (p.adapter === "systemone" && !(p.formats ?? []).includes("systemone")) {
       errors.push(`${path}: the systemone adapter needs "systemone" in formats`);
     }

@@ -902,6 +902,34 @@
       "source": "https://docs.z.ai/guides/overview/pricing",
       "as_of": "2026-11-17",
       "note": "Cached input storage is listed as limited-time free and is not priced."
+    },
+    "groq/openai/gpt-oss-120b": {
+      "input": 0.15,
+      "output": 0.6,
+      "note": "From the price column of Groq's models page (groq.com/pricing redirects to the home page). No cached input price is published there, so cached input is priced at the input rate.",
+      "source": "https://console.groq.com/docs/models",
+      "as_of": "2026-11-17"
+    },
+    "groq/openai/gpt-oss-20b": {
+      "input": 0.075,
+      "output": 0.3,
+      "note": "From the price column of Groq's models page (groq.com/pricing redirects to the home page). No cached input price is published there, so cached input is priced at the input rate.",
+      "source": "https://console.groq.com/docs/models",
+      "as_of": "2026-11-17"
+    },
+    "groq/openai/gpt-oss-safeguard-20b": {
+      "input": 0.075,
+      "output": 0.3,
+      "note": "From the price column of Groq's models page (groq.com/pricing redirects to the home page). No cached input price is published there, so cached input is priced at the input rate.",
+      "source": "https://console.groq.com/docs/models",
+      "as_of": "2026-11-17"
+    },
+    "groq/qwen/qwen3.8-27b": {
+      "input": 0.8,
+      "output": 4,
+      "note": "From the price column of Groq's models page (groq.com/pricing redirects to the home page). No cached input price is published there, so cached input is priced at the input rate.",
+      "source": "https://console.groq.com/docs/models",
+      "as_of": "2026-11-17"
     }
   }
 }

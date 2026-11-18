@@ -20,8 +20,8 @@
   "$defs": {
     "format": {
       "type": "string",
-      "enum": ["chat", "messages", "systemone"],
-      "description": "An API format: chat (OpenAI Chat Completions, /v1/chat/completions), messages (Anthropic Messages, /v1/messages), systemone (TypeSafe System One, /v1/systemone)."
+      "enum": ["chat", "messages", "systemone", "responses"],
+      "description": "An API format: chat (OpenAI Chat Completions, /v1/chat/completions), messages (Anthropic Messages, /v1/messages), systemone (TypeSafe System One, /v1/systemone), responses (OpenAI Responses, /v1/responses)."
     },
     "httpsUrl": { "type": "string", "format": "uri", "pattern": "^https://[^\\s]+[^/\\s]$" },
     "provider": {
@@ -66,6 +66,7 @@
         },
         "messagesBaseUrl": { "$ref": "#/$defs/httpsUrl", "description": "Base URL of an Anthropic-compatible endpoint, for a provider that is not Anthropic but also serves the messages format." },
         "messagesVerify": { "type": "boolean", "description": "True while messagesBaseUrl is unconfirmed: the messages format stays off until a live request succeeds." },
+        "responsesVerify": { "type": "boolean", "description": "True while the provider's Responses endpoint (<baseUrl>/responses) is unconfirmed: the responses format stays off until a live request succeeds." },
         "rejectsStreamOptions": { "type": "boolean", "description": "True when the provider rejects stream_options, so the gateway does not send it." },
         "notes": { "type": "string", "description": "Free text for people reading the catalog." },
         "liveTested": {
@@ -75,7 +76,8 @@
           "properties": {
             "chat": { "type": "string", "format": "date" },
             "messages": { "type": "string", "format": "date" },
-            "systemone": { "type": "string", "format": "date" }
+            "systemone": { "type": "string", "format": "date" },
+            "responses": { "type": "string", "format": "date" }
           },
           "description": "Per format, the last date (YYYY-MM-DD) that format passed OpenPike's live test against the real provider."
         }

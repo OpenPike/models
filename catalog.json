@@ -34,7 +34,7 @@
       "verify": false,
       "liveTested": {
         "chat": "2026-11-16",
-        "messages": "2026-11-16"
+        "messages": "2026-11-17"
       },
       "messagesBaseUrl": "https://api.deepseek.com/anthropic",
       "notes": "DeepSeek also serves an Anthropic-compatible endpoint at messagesBaseUrl, confirmed live on 2026-11-15 with deepseek-flash (non-streaming and streaming)."
@@ -61,10 +61,14 @@
       "adapter": "openai",
       "baseUrl": "https://api.openai.com/v1",
       "formats": [
-        "chat"
+        "chat",
+        "responses"
       ],
       "auth": "bearer",
-      "verify": false
+      "verify": false,
+      "liveTested": {
+        "responses": "2026-11-17"
+      }
     },
     {
       "slug": "openrouter",
@@ -75,11 +79,12 @@
       "baseUrl": "https://openrouter.ai/api/v1",
       "formats": [
         "chat",
-        "systemone"
+        "systemone",
+        "responses"
       ],
       "auth": "bearer",
       "verify": false,
-      "notes": "Customers may bring an OpenRouter key as a catch-all upstream. Not in OpenRouter's own provider list."
+      "notes": "Customers may bring an OpenRouter key as a catch-all upstream. Not in OpenRouter's own provider list. Responses (/v1/responses): Available from docs plus a keyless check: documented at https://openrouter.ai/docs/api/reference/responses/overview, and a keyless POST https://openrouter.ai/api/v1/responses answered 401 with a JSON error on 2026-11-17. Not tested live by OpenPike."
     },
     {
       "slug": "typesafe",
@@ -140,12 +145,14 @@
       "tier": "openai-compatible",
       "adapter": "openai-compatible",
       "formats": [
-        "chat"
+        "chat",
+        "responses"
       ],
       "auth": "bearer",
       "baseUrl": "https://api.groq.com/openai/v1",
       "verify": false,
-      "enabled": true
+      "enabled": true,
+      "notes": "Responses (/v1/responses): Available from docs plus a keyless check: documented at https://console.groq.com/docs/responses-api, and a keyless POST https://api.groq.com/openai/v1/responses answered 401 with a JSON error on 2026-11-17. Not tested live by OpenPike."
     },
     {
       "slug": "mistral",
@@ -192,12 +199,14 @@
       "tier": "openai-compatible",
       "adapter": "openai-compatible",
       "formats": [
-        "chat"
+        "chat",
+        "responses"
       ],
       "auth": "bearer",
       "baseUrl": "https://api.x.ai/v1",
       "verify": false,
-      "enabled": true
+      "enabled": true,
+      "notes": "Responses (/v1/responses): Available from docs plus a keyless check: documented at https://docs.x.ai/developers/rest-api-reference/inference/responses, and a keyless POST https://api.x.ai/v1/responses answered 401 with a JSON error on 2026-11-17. Not tested live by OpenPike."
     },
     {
       "slug": "ai21",
