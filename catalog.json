@@ -16,7 +16,7 @@
       "auth": "x-api-key",
       "verify": false,
       "liveTested": {
-        "messages": "2026-11-16"
+        "messages": "2026-11-17"
       }
     },
     {
@@ -33,7 +33,7 @@
       "auth": "bearer",
       "verify": false,
       "liveTested": {
-        "chat": "2026-11-16",
+        "chat": "2026-11-17",
         "messages": "2026-11-17"
       },
       "messagesBaseUrl": "https://api.deepseek.com/anthropic",
@@ -67,6 +67,7 @@
       "auth": "bearer",
       "verify": false,
       "liveTested": {
+        "chat": "2026-11-17",
         "responses": "2026-11-17"
       }
     },
