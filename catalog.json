@@ -179,7 +179,8 @@
       "auth": "bearer",
       "baseUrl": "https://api.perplexity.ai",
       "verify": false,
-      "enabled": true
+      "enabled": true,
+      "notes": "Sonar Chat Completions support ended on 2026-09-27 (https://docs.perplexity.ai/docs/agent-api/migrate-from-sonar/overview): synchronous and streaming requests still work, served as Agent API requests. A keyless POST https://api.perplexity.ai/chat/completions answered 401 with a JSON error on 2026-11-21. Per-request search fees are not in OpenPike's cost."
     },
     {
       "slug": "together",

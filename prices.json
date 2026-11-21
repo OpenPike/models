@@ -930,6 +930,5812 @@
       "note": "From the price column of Groq's models page (groq.com/pricing redirects to the home page). No cached input price is published there, so cached input is priced at the input rate.",
       "source": "https://console.groq.com/docs/models",
       "as_of": "2026-11-17"
+    },
+    "xai/grok-4.7": {
+      "input": 2,
+      "output": 6,
+      "cached_input": 0.5,
+      "tiers": [
+        {
+          "above_prompt_tokens": 199999,
+          "input": 4,
+          "output": 12,
+          "cached_input": 1
+        }
+      ],
+      "note": "Long context: xAI bills every token in the request at the higher rates once the prompt reaches 200k tokens (≥ 200k), so the tier starts above 199,999.",
+      "source": "https://docs.x.ai/developers/pricing",
+      "as_of": "2026-11-21"
+    },
+    "xai/grok-4.6": {
+      "input": 2,
+      "output": 6,
+      "cached_input": 0.5,
+      "tiers": [
+        {
+          "above_prompt_tokens": 199999,
+          "input": 4,
+          "output": 12,
+          "cached_input": 1
+        }
+      ],
+      "note": "Long context: xAI bills every token in the request at the higher rates once the prompt reaches 200k tokens (≥ 200k), so the tier starts above 199,999.",
+      "source": "https://docs.x.ai/developers/pricing",
+      "as_of": "2026-11-21"
+    },
+    "xai/grok-4.5": {
+      "input": 2,
+      "output": 6,
+      "cached_input": 0.3,
+      "tiers": [
+        {
+          "above_prompt_tokens": 199999,
+          "input": 4,
+          "output": 12,
+          "cached_input": 0.6
+        }
+      ],
+      "note": "Long context: xAI bills every token in the request at the higher rates once the prompt reaches 200k tokens (≥ 200k), so the tier starts above 199,999.",
+      "source": "https://docs.x.ai/developers/pricing",
+      "as_of": "2026-11-21"
+    },
+    "xai/grok-4.3": {
+      "input": 1.25,
+      "output": 2.5,
+      "cached_input": 0.2,
+      "tiers": [
+        {
+          "above_prompt_tokens": 199999,
+          "input": 2.5,
+          "output": 5,
+          "cached_input": 0.4
+        }
+      ],
+      "note": "Long context: xAI bills every token in the request at the higher rates once the prompt reaches 200k tokens (≥ 200k), so the tier starts above 199,999.",
+      "source": "https://docs.x.ai/developers/pricing",
+      "as_of": "2026-11-21"
+    },
+    "xai/grok-4.20-0309-reasoning": {
+      "input": 1.25,
+      "output": 2.5,
+      "cached_input": 0.2,
+      "tiers": [
+        {
+          "above_prompt_tokens": 199999,
+          "input": 2.5,
+          "output": 5,
+          "cached_input": 0.4
+        }
+      ],
+      "note": "Long context: xAI bills every token in the request at the higher rates once the prompt reaches 200k tokens (≥ 200k), so the tier starts above 199,999.",
+      "source": "https://docs.x.ai/developers/pricing",
+      "as_of": "2026-11-21"
+    },
+    "xai/grok-4.20-0309-non-reasoning": {
+      "input": 1.25,
+      "output": 2.5,
+      "cached_input": 0.2,
+      "tiers": [
+        {
+          "above_prompt_tokens": 199999,
+          "input": 2.5,
+          "output": 5,
+          "cached_input": 0.4
+        }
+      ],
+      "note": "Long context: xAI bills every token in the request at the higher rates once the prompt reaches 200k tokens (≥ 200k), so the tier starts above 199,999.",
+      "source": "https://docs.x.ai/developers/pricing",
+      "as_of": "2026-11-21"
+    },
+    "xai/grok-build-0.1": {
+      "input": 1,
+      "output": 2,
+      "cached_input": 0.2,
+      "tiers": [
+        {
+          "above_prompt_tokens": 199999,
+          "input": 2,
+          "output": 4,
+          "cached_input": 0.4
+        }
+      ],
+      "note": "Long context: xAI bills every token in the request at the higher rates once the prompt reaches 200k tokens (≥ 200k), so the tier starts above 199,999.",
+      "source": "https://docs.x.ai/developers/pricing",
+      "as_of": "2026-11-21"
+    },
+    "xai/grok-4.20-multi-agent-0309": {
+      "input": 1.25,
+      "output": 2.5,
+      "cached_input": 0.2,
+      "tiers": [
+        {
+          "above_prompt_tokens": 199999,
+          "input": 2.5,
+          "output": 5,
+          "cached_input": 0.4
+        }
+      ],
+      "note": "Long context: xAI bills every token in the request at the higher rates once the prompt reaches 200k tokens (≥ 200k), so the tier starts above 199,999.",
+      "source": "https://docs.x.ai/developers/pricing",
+      "as_of": "2026-11-21"
+    },
+    "mistral/mistral-large-4": {
+      "input": 0.7,
+      "output": 2.1,
+      "cached_input": 0.07,
+      "source": "https://docs.mistral.ai/models/pricing",
+      "as_of": "2026-11-21"
+    },
+    "mistral/mistral-small-2603": {
+      "input": 0.15,
+      "output": 0.6,
+      "cached_input": 0.015,
+      "source": "https://docs.mistral.ai/models/pricing",
+      "as_of": "2026-11-21"
+    },
+    "mistral/ministral-14b-2512": {
+      "input": 0.2,
+      "output": 0.2,
+      "cached_input": 0.02,
+      "source": "https://docs.mistral.ai/models/pricing",
+      "as_of": "2026-11-21"
+    },
+    "mistral/ministral-14b-latest": {
+      "input": 0.2,
+      "output": 0.2,
+      "cached_input": 0.02,
+      "note": "API name from https://docs.mistral.ai/models (ministral-14b-latest from its model card).",
+      "source": "https://docs.mistral.ai/models/pricing",
+      "as_of": "2026-11-21"
+    },
+    "mistral/ministral-8b-2512": {
+      "input": 0.15,
+      "output": 0.15,
+      "cached_input": 0.015,
+      "source": "https://docs.mistral.ai/models/pricing",
+      "as_of": "2026-11-21"
+    },
+    "mistral/ministral-3b-2512": {
+      "input": 0.1,
+      "output": 0.1,
+      "cached_input": 0.01,
+      "source": "https://docs.mistral.ai/models/pricing",
+      "as_of": "2026-11-21"
+    },
+    "mistral/codestral-2508": {
+      "input": 0.3,
+      "output": 0.9,
+      "cached_input": 0.03,
+      "source": "https://docs.mistral.ai/models/pricing",
+      "as_of": "2026-11-21"
+    },
+    "mistral/zai-glm-5-3": {
+      "input": 1.4,
+      "output": 4.4,
+      "cached_input": 0.14,
+      "source": "https://docs.mistral.ai/models/pricing",
+      "as_of": "2026-11-21"
+    },
+    "mistral/zai-glm-5-3-flash": {
+      "input": 0.15,
+      "output": 0.5,
+      "cached_input": 0.03,
+      "source": "https://docs.mistral.ai/models/pricing",
+      "as_of": "2026-11-21"
+    },
+    "mistral/deepseek-v4-1-flash-1017": {
+      "input": 0.3,
+      "output": 1.2,
+      "cached_input": 0.007,
+      "source": "https://docs.mistral.ai/models/pricing",
+      "as_of": "2026-11-21"
+    },
+    "together/deepseek-ai/DeepSeek-V4-Pro-0813": {
+      "input": 1.32,
+      "output": 3.96,
+      "cached_input": 0.13,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "together/deepseek-ai/DeepSeek-V4.1-Flash": {
+      "input": 0.3,
+      "output": 1.2,
+      "cached_input": 0.006,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "together/deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+      "input": 0.3,
+      "output": 1.2,
+      "cached_input": 0.006,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "together/elorian-labs/glimpse-1.0": {
+      "input": 0.6,
+      "output": 3,
+      "cached_input": 0.06,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "together/meta-models/Muse-Glimmer-30B": {
+      "input": 0.35,
+      "output": 1.5,
+      "cached_input": 0.04,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "together/meta-models/Muse-Spark-Open-816B-A42B": {
+      "input": 1.25,
+      "output": 4.25,
+      "cached_input": 0.15,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "together/MiniMaxAI/MiniMax-M3.1-Flash": {
+      "input": 0.15,
+      "output": 0.6,
+      "cached_input": 0.015,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "together/moonshotai/Kimi-K3": {
+      "input": 3,
+      "output": 15,
+      "cached_input": 0.3,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "together/moonshotai/Kimi-K3.1-Pro": {
+      "input": 2,
+      "output": 10,
+      "cached_input": 0.2,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "together/nvidia/NVIDIA-Nemotron-3.5-Super-VL": {
+      "input": 0.15,
+      "output": 0.5,
+      "cached_input": 0.02,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "together/openai/gpt-oss-120b": {
+      "input": 0.15,
+      "output": 0.6,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "together/Prism-ML/Ternary-Bonsai-27B": {
+      "input": 0,
+      "output": 0,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "together/Qwen/Qwen3.5-9B": {
+      "input": 0.17,
+      "output": 0.25,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "together/Qwen/Qwen3.6-Plus": {
+      "input": 0.5,
+      "output": 3,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "together/Qwen/Qwen3.7-Max": {
+      "input": 2.5,
+      "output": 7.5,
+      "cached_input": 0.5,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "together/Qwen/Qwen3.7-Plus": {
+      "input": 0.32,
+      "output": 1.28,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "together/Qwen/Qwen3.8-Flash": {
+      "input": 0.15,
+      "output": 0.47,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "together/Qwen/Qwen4-Max": {
+      "input": 1.425,
+      "output": 4.275,
+      "cached_input": 0.07125,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "together/reflection/Beam-1.0-501B-A23B": {
+      "input": 0.4,
+      "output": 1.2,
+      "cached_input": 0.04,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "together/ricursive-ai/Ripple-65B-Preview": {
+      "input": 0.2,
+      "output": 0.6,
+      "cached_input": 0.02,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "together/tencent/Hy4": {
+      "input": 0.834,
+      "output": 2.501,
+      "cached_input": 0.042,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "together/thinkingmachines/Inkling-2-Small": {
+      "input": 0.3,
+      "output": 1,
+      "cached_input": 0.03,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "together/together/Tev1-4B-experimental": {
+      "input": 0.042,
+      "output": 0,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "together/zai-org/GLM-5.2": {
+      "input": 1.4,
+      "output": 4.4,
+      "cached_input": 0.26,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "together/zai-org/GLM-5.3": {
+      "input": 1.4,
+      "output": 4.4,
+      "cached_input": 0.26,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "together/zai-org/GLM-5.3-Flash": {
+      "input": 0.15,
+      "output": 0.5,
+      "cached_input": 0.03,
+      "source": "https://docs.together.ai/docs/serverless/models",
+      "as_of": "2026-11-21"
+    },
+    "fireworks/accounts/fireworks/models/ember-1": {
+      "input": 3,
+      "output": 15,
+      "cached_input": 0.3,
+      "note": "Standard tier. Fast, Flex, Priority and US-only serving bill differently (see the page); confirm how a request selects them before pricing those.",
+      "source": "https://docs.fireworks.ai/serverless/pricing",
+      "as_of": "2026-11-21"
+    },
+    "fireworks/accounts/fireworks/models/muse-spark-open": {
+      "input": 1.25,
+      "output": 4.25,
+      "cached_input": 0.15,
+      "note": "Standard tier. Fast, Flex, Priority and US-only serving bill differently (see the page); confirm how a request selects them before pricing those.",
+      "source": "https://docs.fireworks.ai/serverless/pricing",
+      "as_of": "2026-11-21"
+    },
+    "fireworks/accounts/fireworks/models/kimi-k3p1-pro": {
+      "input": 2,
+      "output": 10,
+      "cached_input": 0.2,
+      "note": "Standard tier. Fast, Flex, Priority and US-only serving bill differently (see the page); confirm how a request selects them before pricing those.",
+      "source": "https://docs.fireworks.ai/serverless/pricing",
+      "as_of": "2026-11-21"
+    },
+    "fireworks/accounts/fireworks/models/kimi-k3": {
+      "input": 3,
+      "output": 15,
+      "cached_input": 0.3,
+      "note": "Standard tier. Fast, Flex, Priority and US-only serving bill differently (see the page); confirm how a request selects them before pricing those.",
+      "source": "https://docs.fireworks.ai/serverless/pricing",
+      "as_of": "2026-11-21"
+    },
+    "fireworks/accounts/fireworks/models/deepseek-v4p1-flash": {
+      "input": 0.3,
+      "output": 1.2,
+      "cached_input": 0.006,
+      "note": "Standard tier. Fast, Flex, Priority and US-only serving bill differently (see the page); confirm how a request selects them before pricing those.",
+      "source": "https://docs.fireworks.ai/serverless/pricing",
+      "as_of": "2026-11-21"
+    },
+    "fireworks/accounts/fireworks/models/deepseek-v4p1-flash-1017": {
+      "input": 0.3,
+      "output": 1.2,
+      "cached_input": 0.006,
+      "note": "Standard tier. Fast, Flex, Priority and US-only serving bill differently (see the page); confirm how a request selects them before pricing those.",
+      "source": "https://docs.fireworks.ai/serverless/pricing",
+      "as_of": "2026-11-21"
+    },
+    "fireworks/accounts/fireworks/models/glm-5p3-flash": {
+      "input": 0.15,
+      "output": 0.5,
+      "cached_input": 0.03,
+      "note": "Standard tier. Fast, Flex, Priority and US-only serving bill differently (see the page); confirm how a request selects them before pricing those.",
+      "source": "https://docs.fireworks.ai/serverless/pricing",
+      "as_of": "2026-11-21"
+    },
+    "fireworks/accounts/fireworks/models/ultramarine-1-flash-us": {
+      "input": 0.15,
+      "output": 0.5,
+      "cached_input": 0.03,
+      "note": "Standard tier. Fast, Flex, Priority and US-only serving bill differently (see the page); confirm how a request selects them before pricing those.",
+      "source": "https://docs.fireworks.ai/serverless/pricing",
+      "as_of": "2026-11-21"
+    },
+    "fireworks/accounts/fireworks/models/glm-5p3": {
+      "input": 1.4,
+      "output": 4.4,
+      "cached_input": 0.26,
+      "note": "Standard tier. Fast, Flex, Priority and US-only serving bill differently (see the page); confirm how a request selects them before pricing those.",
+      "source": "https://docs.fireworks.ai/serverless/pricing",
+      "as_of": "2026-11-21"
+    },
+    "fireworks/accounts/fireworks/models/qwen3p8-max": {
+      "input": 2,
+      "output": 6,
+      "cached_input": 0.25,
+      "note": "Standard tier. Fast, Flex, Priority and US-only serving bill differently (see the page); confirm how a request selects them before pricing those.",
+      "source": "https://docs.fireworks.ai/serverless/pricing",
+      "as_of": "2026-11-21"
+    },
+    "fireworks/accounts/fireworks/models/minimax-m3": {
+      "input": 0.3,
+      "output": 1.2,
+      "cached_input": 0.06,
+      "note": "Standard tier. Fast, Flex, Priority and US-only serving bill differently (see the page); confirm how a request selects them before pricing those.",
+      "source": "https://docs.fireworks.ai/serverless/pricing",
+      "as_of": "2026-11-21"
+    },
+    "fireworks/accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b": {
+      "input": 0.05,
+      "output": 0.2,
+      "cached_input": 0.01,
+      "note": "Standard tier. Fast, Flex, Priority and US-only serving bill differently (see the page); confirm how a request selects them before pricing those.",
+      "source": "https://docs.fireworks.ai/serverless/pricing",
+      "as_of": "2026-11-21"
+    },
+    "fireworks/accounts/fireworks/models/nemotron-3-ultra-nvfp4": {
+      "input": 0.6,
+      "output": 2.4,
+      "cached_input": 0.12,
+      "note": "Standard tier. Fast, Flex, Priority and US-only serving bill differently (see the page); confirm how a request selects them before pricing those.",
+      "source": "https://docs.fireworks.ai/serverless/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+      "input": 0.2,
+      "output": 0.6,
+      "cached_input": 0.006,
+      "note": "List price; the page shows a temporary discount (51% off promo: .098/.0029/.294). Priced at list so budgets err on the safe side; add a dated change if the discount ends or becomes permanent.",
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/deepseek-ai/DeepSeek-V4.1-Flash": {
+      "input": 0.2,
+      "output": 0.6,
+      "cached_input": 0.006,
+      "note": "List price; the page shows a temporary discount (30% off promo: .14/.0042/.42). Priced at list so budgets err on the safe side; add a dated change if the discount ends or becomes permanent.",
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/deepseek-ai/DeepSeek-V4-Pro-0813": {
+      "input": 1.3,
+      "output": 2.6,
+      "cached_input": 0.1,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/deepseek-ai/DeepSeek-V4-Flash-0731": {
+      "input": 0.06,
+      "output": 0.18,
+      "cached_input": 0.015,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/deepseek-ai/DeepSeek-V4-Pro": {
+      "input": 1.3,
+      "output": 2.6,
+      "cached_input": 0.1,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/deepseek-ai/DeepSeek-V4-Flash": {
+      "input": 0.09,
+      "output": 0.18,
+      "cached_input": 0.018,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp": {
+      "input": 0.44,
+      "output": 1.32,
+      "cached_input": 0.014,
+      "note": "List price; the page shows a temporary discount (51% off promo). Priced at list so budgets err on the safe side; add a dated change if the discount ends or becomes permanent.",
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/deepseek-ai/DeepSeek-V3.2": {
+      "input": 0.26,
+      "output": 0.38,
+      "cached_input": 0.13,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/deepseek-ai/DeepSeek-V3.1": {
+      "input": 0.25,
+      "output": 0.95,
+      "cached_input": 0.13,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/deepseek-ai/DeepSeek-V3": {
+      "input": 0.32,
+      "output": 0.89,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/deepseek-ai/DeepSeek-R1-0528": {
+      "input": 0.5,
+      "output": 2.15,
+      "cached_input": 0.35,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/moonshotai/Kimi-K3.1-Pro": {
+      "input": 2,
+      "output": 10,
+      "cached_input": 0.2,
+      "note": "List price; the page shows a temporary discount (5% off promo). Priced at list so budgets err on the safe side; add a dated change if the discount ends or becomes permanent.",
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/moonshotai/Kimi-K3": {
+      "input": 2.85,
+      "output": 14.25,
+      "cached_input": 0.285,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/moonshotai/Kimi-K2.6": {
+      "input": 0.75,
+      "output": 3.5,
+      "cached_input": 0.15,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/zai-org/GLM-5.3": {
+      "input": 0.9,
+      "output": 4,
+      "cached_input": 0.2,
+      "note": "List price; the page shows a temporary discount (38% off promo). Priced at list so budgets err on the safe side; add a dated change if the discount ends or becomes permanent.",
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/zai-org/GLM-5.3-Flash": {
+      "input": 0.15,
+      "output": 0.5,
+      "cached_input": 0.03,
+      "note": "List price; the page shows a temporary discount (33% off promo). Priced at list so budgets err on the safe side; add a dated change if the discount ends or becomes permanent.",
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/zai-org/GLM-5.2": {
+      "input": 0.75,
+      "output": 2.4,
+      "cached_input": 0.14,
+      "note": "List price; the page shows a temporary discount (25% off promo). Priced at list so budgets err on the safe side; add a dated change if the discount ends or becomes permanent.",
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/zai-org/GLM-4.7": {
+      "input": 0.4,
+      "output": 1.75,
+      "cached_input": 0.08,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/zai-org/GLM-4.6": {
+      "input": 0.5,
+      "output": 2,
+      "cached_input": 0.1,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/Qwen/Qwen4-Max": {
+      "input": 1.413,
+      "output": 4.24,
+      "cached_input": 0.071,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/Qwen/Qwen3.8-Flash": {
+      "input": 0.113,
+      "output": 0.382,
+      "cached_input": 0.0141,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/Qwen/Qwen3.8-27B": {
+      "input": 0.2,
+      "output": 2.5,
+      "cached_input": 0.05,
+      "note": "List price; the page shows a temporary discount (25% off promo). Priced at list so budgets err on the safe side; add a dated change if the discount ends or becomes permanent.",
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/Qwen/Qwen3.6-27B": {
+      "input": 0.32,
+      "output": 3.2,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/Qwen/Qwen3.6-35B-A3B": {
+      "input": 0.1,
+      "output": 0.95,
+      "cached_input": 0.1,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/Qwen/Qwen3.5-397B-A17B": {
+      "input": 0.45,
+      "output": 3,
+      "cached_input": 0.22,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/Qwen/Qwen3.5-35B-A3B": {
+      "input": 0.14,
+      "output": 1,
+      "cached_input": 0.05,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/Qwen/Qwen3.5-27B": {
+      "input": 0.26,
+      "output": 2.6,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/Qwen/Qwen3.5-9B": {
+      "input": 0.1,
+      "output": 0.15,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/Qwen/Qwen3.8-Max": {
+      "input": 1.65,
+      "output": 4.951,
+      "cached_input": 0.206,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/Qwen/Qwen3.7-Max": {
+      "input": 2.5,
+      "output": 7.5,
+      "cached_input": 0.5,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/Qwen/Qwen3-VL-30B-A3B-Instruct": {
+      "input": 0.15,
+      "output": 0.6,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/Qwen/Qwen3-VL-235B-A22B-Instruct": {
+      "input": 0.2,
+      "output": 0.88,
+      "cached_input": 0.11,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/Qwen/Qwen3-Next-80B-A3B-Instruct": {
+      "input": 0.09,
+      "output": 1.1,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo": {
+      "input": 0.3,
+      "output": 1,
+      "cached_input": 0.1,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/Qwen/Qwen3-235B-A22B-Instruct-2507": {
+      "input": 0.09,
+      "output": 0.55,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/Qwen/Qwen3-32B": {
+      "input": 0.08,
+      "output": 0.28,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/Qwen/Qwen3-30B-A3B": {
+      "input": 0.12,
+      "output": 0.5,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/Qwen/Qwen3-14B": {
+      "input": 0.12,
+      "output": 0.24,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/Qwen/Qwen2.5-72B-Instruct": {
+      "input": 0.36,
+      "output": 0.4,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/meta-llama/Llama-4-Scout-17B-16E-Instruct": {
+      "input": 0.1,
+      "output": 0.3,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+      "input": 0.1,
+      "output": 0.32,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo": {
+      "input": 0.02,
+      "output": 0.04,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/google/gemini-3.7-flash": {
+      "input": 0.75,
+      "output": 3.75,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/google/gemini-3.5-flash": {
+      "input": 1.5,
+      "output": 9,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/google/gemini-3.1-flash-lite": {
+      "input": 0.25,
+      "output": 1.5,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/google/gemini-3.1-pro": {
+      "input": 2,
+      "output": 12,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/google/gemini-2.5-pro": {
+      "input": 1.25,
+      "output": 10,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/google/gemini-2.5-flash": {
+      "input": 0.3,
+      "output": 2.5,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/google/gemma-4-31B-it-Ultra": {
+      "input": 0.27,
+      "output": 0.76,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/google/gemma-4-31B-it-turbo": {
+      "input": 0.09,
+      "output": 0.34,
+      "cached_input": 0.05,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/google/gemma-4-31B-it": {
+      "input": 0.2,
+      "output": 0.4,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/google/gemma-4-26B-A4B-it": {
+      "input": 0.07,
+      "output": 0.34,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/google/gemma-3-27b-it": {
+      "input": 0.08,
+      "output": 0.16,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/google/gemma-3-12b-it": {
+      "input": 0.05,
+      "output": 0.15,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/google/gemma-3-4b-it": {
+      "input": 0.05,
+      "output": 0.1,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/nvidia/NVIDIA-Nemotron-3.5-Lightning": {
+      "input": 0.06,
+      "output": 0.16,
+      "cached_input": 0.03,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/nvidia/NVIDIA-Nemotron-3.5-Super-VL": {
+      "input": 0.15,
+      "output": 0.5,
+      "cached_input": 0.02,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B": {
+      "input": 0.5,
+      "output": 2.2,
+      "cached_input": 0.1,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B": {
+      "input": 0.075,
+      "output": 0.4,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/anthropic/claude-sonnet-5-5": {
+      "input": 2,
+      "output": 10,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/anthropic/claude-opus-5-5": {
+      "input": 4,
+      "output": 20,
+      "cached_input": 0.2,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/anthropic/claude-opus-5": {
+      "input": 5,
+      "output": 25,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/anthropic/claude-fable-5": {
+      "input": 10,
+      "output": 50,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/anthropic/claude-sonnet-5": {
+      "input": 3,
+      "output": 15,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/anthropic/claude-haiku-4-5": {
+      "input": 1,
+      "output": 5,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/anthropic/claude-sonnet-4-6": {
+      "input": 3,
+      "output": 15,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/anthropic/claude-opus-4-7": {
+      "input": 5,
+      "output": 25,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/anthropic/claude-opus-4-8": {
+      "input": 5,
+      "output": 25,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/microsoft/phi-4": {
+      "input": 0.07,
+      "output": 0.14,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/mistralai/Mistral-Small-3.2-24B-Instruct-2506": {
+      "input": 0.075,
+      "output": 0.2,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/mistralai/Mistral-Small-24B-Instruct-2501": {
+      "input": 0.05,
+      "output": 0.08,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "deepinfra/mistralai/Mistral-Nemo-Instruct-2407": {
+      "input": 0.029,
+      "output": 0.03,
+      "source": "https://deepinfra.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "cerebras/gpt-oss-120b": {
+      "input": 0.35,
+      "output": 0.75,
+      "note": "Prompt caching is listed as a capability with no cached rate, so cached input is priced at the input rate.",
+      "source": "https://inference-docs.cerebras.ai/models/openai-oss",
+      "as_of": "2026-11-21"
+    },
+    "cerebras/qwen-3.8-27b": {
+      "input": 0.99,
+      "output": 1.49,
+      "note": "Prompt caching is listed as a capability with no cached rate, so cached input is priced at the input rate.",
+      "source": "https://inference-docs.cerebras.ai/models/qwen-3.8-27b",
+      "as_of": "2026-11-21"
+    },
+    "fireworks/accounts/fireworks/routers/kimi-k3-fast": {
+      "input": 4.5,
+      "output": 22.5,
+      "cached_input": 0.45,
+      "note": "Fast variant, selected by this model ID (https://docs.fireworks.ai/serverless/serverless-modes).",
+      "source": "https://docs.fireworks.ai/serverless/pricing",
+      "as_of": "2026-11-21"
+    },
+    "fireworks/accounts/fireworks/routers/glm-5p3-fast": {
+      "input": 2.1,
+      "output": 6.6,
+      "cached_input": 0.39,
+      "note": "Fast variant, selected by this model ID (https://docs.fireworks.ai/serverless/serverless-modes).",
+      "source": "https://docs.fireworks.ai/serverless/pricing",
+      "as_of": "2026-11-21"
+    },
+    "fireworks/accounts/fireworks/routers/deepseek-v4p1-flash-1017-ultrafast": {
+      "input": 1.2,
+      "output": 4.8,
+      "cached_input": 0.024,
+      "note": "Ultra-fast (Preview) variant, selected by this model ID (https://docs.fireworks.ai/serverless/serverless-modes).",
+      "source": "https://docs.fireworks.ai/serverless/pricing",
+      "as_of": "2026-11-21"
+    },
+    "fireworks/accounts/fireworks/routers/deepseek-v4p1-flash-1017-flex": {
+      "input": 0.15,
+      "output": 0.6,
+      "cached_input": 0.003,
+      "note": "Flex variant (50% off Standard), selected by this model ID (https://docs.fireworks.ai/serverless/serverless-modes).",
+      "source": "https://docs.fireworks.ai/serverless/pricing",
+      "as_of": "2026-11-21"
+    },
+    "fireworks/accounts/fireworks/routers/kimi-k3-us": {
+      "input": 4.5,
+      "output": 22.5,
+      "cached_input": 0.45,
+      "note": "US-only variant, served from https://us.api.fireworks.ai (https://docs.fireworks.ai/serverless/us-only-serverless).",
+      "source": "https://docs.fireworks.ai/serverless/pricing",
+      "as_of": "2026-11-21"
+    },
+    "fireworks/accounts/fireworks/routers/glm-5p3-us": {
+      "input": 2.1,
+      "output": 6.6,
+      "cached_input": 0.39,
+      "note": "US-only variant, served from https://us.api.fireworks.ai (https://docs.fireworks.ai/serverless/us-only-serverless).",
+      "source": "https://docs.fireworks.ai/serverless/pricing",
+      "as_of": "2026-11-21"
+    },
+    "fireworks/accounts/fireworks/routers/kimi-k3p1-pro-us": {
+      "input": 2.5,
+      "output": 12.5,
+      "cached_input": 0.25,
+      "note": "US-only variant, served from https://us.api.fireworks.ai (https://docs.fireworks.ai/serverless/us-only-serverless).",
+      "source": "https://docs.fireworks.ai/serverless/pricing",
+      "as_of": "2026-11-21"
+    },
+    "fireworks/accounts/fireworks/routers/deepseek-v4p1-flash-us": {
+      "input": 0.45,
+      "output": 1.8,
+      "cached_input": 0.009,
+      "note": "US-only variant, served from https://us.api.fireworks.ai (https://docs.fireworks.ai/serverless/us-only-serverless).",
+      "source": "https://docs.fireworks.ai/serverless/pricing",
+      "as_of": "2026-11-21"
+    },
+    "fireworks/accounts/fireworks/routers/deepseek-v4p1-flash-1017-us": {
+      "input": 0.45,
+      "output": 1.8,
+      "cached_input": 0.009,
+      "note": "US-only variant, served from https://us.api.fireworks.ai (https://docs.fireworks.ai/serverless/us-only-serverless).",
+      "source": "https://docs.fireworks.ai/serverless/pricing",
+      "as_of": "2026-11-21"
+    },
+    "fireworks/accounts/fireworks/routers/glm-5p3-flash-us": {
+      "input": 0.225,
+      "output": 0.75,
+      "cached_input": 0.045,
+      "note": "US-only variant, served from https://us.api.fireworks.ai (https://docs.fireworks.ai/serverless/us-only-serverless).",
+      "source": "https://docs.fireworks.ai/serverless/pricing",
+      "as_of": "2026-11-21"
+    },
+    "perplexity/sonar": {
+      "input": 0.25,
+      "output": 2.5,
+      "cached_input": 0.0625,
+      "note": "Sonar Chat Completions are now served as Agent API requests (https://docs.perplexity.ai/docs/agent-api/migrate-from-sonar/overview); this is the Agent API rate for perplexity/sonar. Perplexity's per-request search fees are not included. sonar-pro, sonar-reasoning-pro and sonar-deep-research have no published per-token price, so they are unpriced.",
+      "source": "https://docs.perplexity.ai/docs/agent-api/models",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/deepseek-ai/DeepSeek-V4.1-Flash": {
+      "input": 0.15,
+      "output": 0.6,
+      "cached_input": 0.003,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp": {
+      "input": 0.44,
+      "output": 1.32,
+      "cached_input": 0.028,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/deepseek-ai/DeepSeek-V4-Pro-0813": {
+      "input": 1.32,
+      "output": 3.96,
+      "cached_input": 0.044,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/deepseek-ai/DeepSeek-V4-Flash-0731": {
+      "input": 0.22,
+      "output": 0.66,
+      "cached_input": 0.014,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/deepseek-ai/DeepSeek-V4-Pro": {
+      "input": 1.50162,
+      "output": 3.135,
+      "cached_input": 0.135,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/Qwen/Qwen3.8-2.4T-A95B": {
+      "input": 2,
+      "output": 6,
+      "cached_input": 0.25,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/Qwen/Qwen3.6-27B": {
+      "input": 0.3,
+      "output": 3.2,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/Qwen/Qwen3.6-35B-A3B": {
+      "input": 0.24,
+      "output": 1.8,
+      "cached_input": 0.15,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/Qwen/Qwen3.5-9B": {
+      "input": 0.1,
+      "output": 0.15,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/Qwen/Qwen3.5-122B-A10B": {
+      "input": 0.26,
+      "output": 2.08,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/zai-org/GLM-5.3": {
+      "input": 1.4,
+      "output": 4.4,
+      "cached_input": 0.26,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/zai-org/GLM-5.3-Flash": {
+      "input": 0.15,
+      "output": 0.5,
+      "cached_input": 0.03,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/zai-org/GLM-5.2": {
+      "input": 1.302,
+      "output": 4.092,
+      "cached_input": 0.26,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/zai-org/GLM-5.1": {
+      "input": 1.19,
+      "output": 3.74,
+      "cached_input": 0.6,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/zai-org/GLM-5": {
+      "input": 0.95,
+      "output": 2.55,
+      "cached_input": 0.2,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/moonshotai/Kimi-K2.5": {
+      "input": 0.45,
+      "output": 2.25,
+      "cached_input": 0.07,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/moonshotai/Kimi-K2.6": {
+      "input": 0.77,
+      "output": 3.4,
+      "cached_input": 0.14,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/moonshotai/Kimi-K2.7-Code": {
+      "input": 0.85916,
+      "output": 3.8,
+      "cached_input": 0.17993,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/moonshotai/Kimi-K3": {
+      "input": 2.7,
+      "output": 13.5,
+      "cached_input": 0.27,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/MiniMaxAI/MiniMax-M3": {
+      "input": 0.3,
+      "output": 1.2,
+      "cached_input": 0.06,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/openai/gpt-oss-120b": {
+      "input": 0.05,
+      "output": 0.45,
+      "cached_input": 0.075,
+      "note": "The page lists cached input (0.075) above input (0.05); kept as published so budgets err high.",
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/openai/gpt-oss-20b": {
+      "input": 0.04,
+      "output": 0.18,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/google/gemma-4-12B-it": {
+      "input": 0.1,
+      "output": 0.3,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/google/gemma-4-26B-A4B-it": {
+      "input": 0.14,
+      "output": 0.4,
+      "cached_input": 0.05,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/google/gemma-4-31B-it": {
+      "input": 0.75,
+      "output": 1,
+      "cached_input": 0.25,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/tencent/Hunyuan-A13B-Instruct": {
+      "input": 0.14,
+      "output": 0.57,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/tencent/Hy3": {
+      "input": 0.132,
+      "output": 0.528,
+      "cached_input": 0.033,
+      "source": "https://www.siliconflow.com/pricing",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/tencent/Hy4-preview": {
+      "input": 0.834,
+      "output": 2.501,
+      "note": "No cached rate is published, so cached input is priced at the input rate.",
+      "source": "https://www.siliconflow.com/models/llm",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/deepseek-ai/DeepSeek-V4-Flash": {
+      "input": 0.13,
+      "output": 0.28,
+      "note": "No cached rate is published, so cached input is priced at the input rate.",
+      "source": "https://www.siliconflow.com/models/llm",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/zai-org/GLM-4.7": {
+      "input": 0.42,
+      "output": 2.2,
+      "note": "No cached rate is published, so cached input is priced at the input rate.",
+      "source": "https://www.siliconflow.com/models/llm",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/deepseek-ai/DeepSeek-V3.2": {
+      "input": 0.27,
+      "output": 0.42,
+      "note": "No cached rate is published, so cached input is priced at the input rate.",
+      "source": "https://www.siliconflow.com/models/llm",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/deepseek-ai/DeepSeek-V3.2-Exp": {
+      "input": 0.27,
+      "output": 0.41,
+      "note": "No cached rate is published, so cached input is priced at the input rate.",
+      "source": "https://www.siliconflow.com/models/llm",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/deepseek-ai/DeepSeek-V3.1-Terminus": {
+      "input": 0.27,
+      "output": 1,
+      "note": "No cached rate is published, so cached input is priced at the input rate.",
+      "source": "https://www.siliconflow.com/models/llm",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/deepseek-ai/DeepSeek-V3.1": {
+      "input": 0.27,
+      "output": 1,
+      "note": "No cached rate is published, so cached input is priced at the input rate.",
+      "source": "https://www.siliconflow.com/models/llm",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/deepseek-ai/DeepSeek-V3": {
+      "input": 0.25,
+      "output": 1,
+      "note": "No cached rate is published, so cached input is priced at the input rate.",
+      "source": "https://www.siliconflow.com/models/llm",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/deepseek-ai/DeepSeek-R1": {
+      "input": 0.5,
+      "output": 2.18,
+      "note": "No cached rate is published, so cached input is priced at the input rate.",
+      "source": "https://www.siliconflow.com/models/llm",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/zai-org/GLM-4.5-Air": {
+      "input": 0.14,
+      "output": 0.86,
+      "note": "No cached rate is published, so cached input is priced at the input rate.",
+      "source": "https://www.siliconflow.com/models/llm",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/zai-org/GLM-5V-Turbo": {
+      "input": 1.2,
+      "output": 4,
+      "note": "No cached rate is published, so cached input is priced at the input rate.",
+      "source": "https://www.siliconflow.com/models/llm",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/meituan-longcat/LongCat-2.0": {
+      "input": 0.75,
+      "output": 2.95,
+      "note": "No cached rate is published, so cached input is priced at the input rate.",
+      "source": "https://www.siliconflow.com/models/llm",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/inclusionAI/Ling-flash-2.0": {
+      "input": 0.14,
+      "output": 0.57,
+      "note": "No cached rate is published, so cached input is priced at the input rate.",
+      "source": "https://www.siliconflow.com/models/llm",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/stepfun-ai/Step-3.5-Flash": {
+      "input": 0.1,
+      "output": 0.3,
+      "note": "No cached rate is published, so cached input is priced at the input rate.",
+      "source": "https://www.siliconflow.com/models/llm",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/Qwen/Qwen3.5-35B-A3B": {
+      "input": 0.24,
+      "output": 1.8,
+      "note": "No cached rate is published, so cached input is priced at the input rate.",
+      "source": "https://www.siliconflow.com/models/llm",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/Qwen/Qwen3.5-27B": {
+      "input": 0.25,
+      "output": 2,
+      "note": "No cached rate is published, so cached input is priced at the input rate.",
+      "source": "https://www.siliconflow.com/models/llm",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/Qwen/Qwen3-Coder-480B-A35B-Instruct": {
+      "input": 0.25,
+      "output": 1,
+      "note": "No cached rate is published, so cached input is priced at the input rate.",
+      "source": "https://www.siliconflow.com/models/llm",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/Qwen/Qwen3-Coder-30B-A3B-Instruct": {
+      "input": 0.07,
+      "output": 0.28,
+      "note": "No cached rate is published, so cached input is priced at the input rate.",
+      "source": "https://www.siliconflow.com/models/llm",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/Qwen/Qwen3-30B-A3B-Instruct-2507": {
+      "input": 0.09,
+      "output": 0.3,
+      "note": "No cached rate is published, so cached input is priced at the input rate.",
+      "source": "https://www.siliconflow.com/models/llm",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/Qwen/Qwen3-32B": {
+      "input": 0.14,
+      "output": 0.57,
+      "note": "No cached rate is published, so cached input is priced at the input rate.",
+      "source": "https://www.siliconflow.com/models/llm",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/Qwen/Qwen3-14B": {
+      "input": 0.07,
+      "output": 0.28,
+      "note": "No cached rate is published, so cached input is priced at the input rate.",
+      "source": "https://www.siliconflow.com/models/llm",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/Qwen/Qwen3-8B": {
+      "input": 0.06,
+      "output": 0.06,
+      "note": "No cached rate is published, so cached input is priced at the input rate.",
+      "source": "https://www.siliconflow.com/models/llm",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/Qwen/Qwen2.5-72B-Instruct": {
+      "input": 0.59,
+      "output": 0.59,
+      "note": "No cached rate is published, so cached input is priced at the input rate.",
+      "source": "https://www.siliconflow.com/models/llm",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/Qwen/Qwen2.5-7B-Instruct": {
+      "input": 0.05,
+      "output": 0.05,
+      "note": "No cached rate is published, so cached input is priced at the input rate.",
+      "source": "https://www.siliconflow.com/models/llm",
+      "as_of": "2026-11-21"
+    },
+    "siliconflow/ByteDance-Seed/Seed-OSS-36B-Instruct": {
+      "input": 0.21,
+      "output": 0.57,
+      "note": "No cached rate is published, so cached input is priced at the input rate.",
+      "source": "https://www.siliconflow.com/models/llm",
+      "as_of": "2026-11-21"
+    },
+    "nebius/deepseek-ai/DeepSeek-V4-Pro-0813": {
+      "input": 1.32,
+      "output": 3.96,
+      "cached_input": 0.04,
+      "source": "https://tokenfactory.nebius.com/api/public/models_info",
+      "as_of": "2026-11-21"
+    },
+    "nebius/deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+      "input": 0.3,
+      "output": 1.2,
+      "cached_input": 0.006,
+      "source": "https://tokenfactory.nebius.com/api/public/models_info",
+      "as_of": "2026-11-21"
+    },
+    "nebius/google/gemma-3-27b-it": {
+      "input": 0.1,
+      "output": 0.3,
+      "cached_input": 0.04,
+      "source": "https://tokenfactory.nebius.com/api/public/models_info",
+      "as_of": "2026-11-21"
+    },
+    "nebius/meta-models/muse-spark-open": {
+      "input": 1.25,
+      "output": 4.25,
+      "cached_input": 0.15,
+      "source": "https://tokenfactory.nebius.com/api/public/models_info",
+      "as_of": "2026-11-21"
+    },
+    "nebius/MiniMaxAI/MiniMax-M3": {
+      "input": 0.3,
+      "output": 1.2,
+      "cached_input": 0.06,
+      "source": "https://tokenfactory.nebius.com/api/public/models_info",
+      "as_of": "2026-11-21"
+    },
+    "nebius/MiniMaxAI/MiniMax-M3.1-Flash": {
+      "input": 0.15,
+      "output": 0.6,
+      "cached_input": 0.015,
+      "source": "https://tokenfactory.nebius.com/api/public/models_info",
+      "as_of": "2026-11-21"
+    },
+    "nebius/moonshotai/Kimi-K3": {
+      "input": 3,
+      "output": 15,
+      "cached_input": 0.3,
+      "source": "https://tokenfactory.nebius.com/api/public/models_info",
+      "as_of": "2026-11-21"
+    },
+    "nebius/moonshotai/Kimi-K3.1-Pro": {
+      "input": 2,
+      "output": 10,
+      "cached_input": 0.2,
+      "source": "https://tokenfactory.nebius.com/api/public/models_info",
+      "as_of": "2026-11-21"
+    },
+    "nebius/NousResearch/Hermes-4-405B": {
+      "input": 1,
+      "output": 3,
+      "cached_input": 0.2,
+      "source": "https://tokenfactory.nebius.com/api/public/models_info",
+      "as_of": "2026-11-21"
+    },
+    "nebius/nvidia/Nemotron-3_5-Lightning": {
+      "input": 0.06,
+      "output": 0.24,
+      "cached_input": 0.03,
+      "source": "https://tokenfactory.nebius.com/api/public/models_info",
+      "as_of": "2026-11-21"
+    },
+    "nebius/nvidia/nemotron-3-super-120b-a12b": {
+      "input": 0.3,
+      "output": 0.9,
+      "cached_input": 0.06,
+      "source": "https://tokenfactory.nebius.com/api/public/models_info",
+      "as_of": "2026-11-21"
+    },
+    "nebius/nvidia/Nemotron-3-Ultra-550b-a55b": {
+      "input": 1,
+      "output": 3,
+      "cached_input": 0.12,
+      "source": "https://tokenfactory.nebius.com/api/public/models_info",
+      "as_of": "2026-11-21"
+    },
+    "nebius/nvidia/Nemotron-3.5-Super-VL": {
+      "input": 0.3,
+      "output": 0.9,
+      "cached_input": 0.06,
+      "source": "https://tokenfactory.nebius.com/api/public/models_info",
+      "as_of": "2026-11-21"
+    },
+    "nebius/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B": {
+      "input": 0.06,
+      "output": 0.24,
+      "cached_input": 0.012,
+      "source": "https://tokenfactory.nebius.com/api/public/models_info",
+      "as_of": "2026-11-21"
+    },
+    "nebius/openai/gpt-oss-120b": {
+      "input": 0.15,
+      "output": 0.6,
+      "cached_input": 0.1,
+      "source": "https://tokenfactory.nebius.com/api/public/models_info",
+      "as_of": "2026-11-21"
+    },
+    "nebius/Qwen/Qwen3-30B-A3B-Instruct-2507": {
+      "input": 0.1,
+      "output": 0.3,
+      "cached_input": 0.1,
+      "source": "https://tokenfactory.nebius.com/api/public/models_info",
+      "as_of": "2026-11-21"
+    },
+    "nebius/Qwen/Qwen3.8-27B": {
+      "input": 0.45,
+      "output": 3,
+      "cached_input": 0.1,
+      "source": "https://tokenfactory.nebius.com/api/public/models_info",
+      "as_of": "2026-11-21"
+    },
+    "nebius/reflection/beam": {
+      "input": 0.25,
+      "output": 1,
+      "cached_input": 0.05,
+      "source": "https://tokenfactory.nebius.com/api/public/models_info",
+      "as_of": "2026-11-21"
+    },
+    "nebius/thinkingmachines/Inkling-2-Small": {
+      "input": 0.3,
+      "output": 1,
+      "cached_input": 0.06,
+      "source": "https://tokenfactory.nebius.com/api/public/models_info",
+      "as_of": "2026-11-21"
+    },
+    "nebius/zai-org/GLM-5.2": {
+      "input": 1.4,
+      "output": 4.4,
+      "cached_input": 0.14,
+      "source": "https://tokenfactory.nebius.com/api/public/models_info",
+      "as_of": "2026-11-21"
+    },
+    "nebius/zai-org/GLM-5.3": {
+      "input": 1.4,
+      "output": 4.4,
+      "cached_input": 0.26,
+      "source": "https://tokenfactory.nebius.com/api/public/models_info",
+      "as_of": "2026-11-21"
+    },
+    "nebius/zai-org/GLM-5.3-Flash": {
+      "input": 0.15,
+      "output": 0.5,
+      "cached_input": 0.03,
+      "source": "https://tokenfactory.nebius.com/api/public/models_info",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/~anthropic/claude-fable-latest": {
+      "input": 8,
+      "output": 40,
+      "cached_input": 0.2,
+      "cache_write": 10,
+      "cache_write_1h": 16,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/~anthropic/claude-haiku-latest": {
+      "input": 0.1,
+      "output": 0.5,
+      "cached_input": 0.01,
+      "cache_write": 0.125,
+      "cache_write_1h": 0.2,
+      "tiers": [
+        {
+          "above_prompt_tokens": 99999,
+          "input": 0.5,
+          "output": 2.5,
+          "cached_input": 0.05,
+          "cache_write": 0.625,
+          "cache_write_1h": 1
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/~anthropic/claude-opus-latest": {
+      "input": 4,
+      "output": 20,
+      "cached_input": 0.2,
+      "cache_write": 5,
+      "cache_write_1h": 8,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/~anthropic/claude-sonnet-latest": {
+      "input": 2,
+      "output": 10,
+      "cached_input": 0.1,
+      "cache_write": 2.5,
+      "cache_write_1h": 4,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/~deepseek/deepseek-flash-latest": {
+      "input": 0.036,
+      "output": 0.5,
+      "cached_input": 0.01,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/~deepseek/deepseek-pro-latest": {
+      "input": 0.0999,
+      "output": 8,
+      "cached_input": 0.0999,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/~deepseek/deepseek-v4-flash-latest": {
+      "input": 0.044,
+      "output": 0.132,
+      "cached_input": 0.0014,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/~google/gemini-flash-latest": {
+      "input": 1.5,
+      "output": 7.5,
+      "cached_input": 0.075,
+      "cache_write": 0.083333333,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/~google/gemini-pro-latest": {
+      "input": 2,
+      "output": 10,
+      "cached_input": 0.1,
+      "cache_write": 0.1875,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/~moonshotai/kimi-latest": {
+      "input": 0.1824,
+      "output": 11.0055,
+      "cached_input": 0.18,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/~openai/gpt-astra-latest": {
+      "input": 8,
+      "output": 40,
+      "cached_input": 0.4,
+      "cache_write": 10,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 16,
+          "output": 60,
+          "cached_input": 0.8,
+          "cache_write": 20
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/~openai/gpt-luna-latest": {
+      "input": 0.1,
+      "output": 0.5,
+      "cached_input": 0.01,
+      "cache_write": 0.125,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 0.2,
+          "output": 0.75,
+          "cached_input": 0.02,
+          "cache_write": 0.25
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/~openai/gpt-mini-latest": {
+      "input": 0.75,
+      "output": 4.5,
+      "cached_input": 0.075,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/~openai/gpt-sol-latest": {
+      "input": 2,
+      "output": 10,
+      "cached_input": 0.1,
+      "cache_write": 2.5,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 4,
+          "output": 15,
+          "cached_input": 0.2,
+          "cache_write": 5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/~openai/gpt-terra-latest": {
+      "input": 1,
+      "output": 5,
+      "cached_input": 0.05,
+      "cache_write": 1.25,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 2,
+          "output": 7.5,
+          "cached_input": 0.1,
+          "cache_write": 2.5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/~unbiased/pareto-latest": {
+      "input": 0.8,
+      "output": 3.2,
+      "cached_input": 0.03,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/~x-ai/grok-latest": {
+      "input": 2,
+      "output": 6,
+      "cached_input": 0.5,
+      "cache_write": 0,
+      "tiers": [
+        {
+          "above_prompt_tokens": 199999,
+          "input": 4,
+          "output": 12,
+          "cached_input": 1,
+          "cache_write": 0
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/~z-ai/glm-flash-latest": {
+      "input": 0.0399,
+      "output": 0.0784,
+      "cached_input": 0.03,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/~z-ai/glm-latest": {
+      "input": 0.0699,
+      "output": 1.4,
+      "cached_input": 0.0689,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/aion-labs/aion-2.0": {
+      "input": 0.8,
+      "output": 1.6,
+      "cached_input": 0.2,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/aion-labs/aion-3.0": {
+      "input": 3,
+      "output": 6,
+      "cached_input": 0.75,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/aion-labs/aion-3.0-mini": {
+      "input": 0.7,
+      "output": 1.4,
+      "cached_input": 0.18,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/aion-labs/aion-3.5": {
+      "input": 3,
+      "output": 6,
+      "cached_input": 0.75,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/aion-labs/aion-3.5-mini": {
+      "input": 0.7,
+      "output": 1.4,
+      "cached_input": 0.18,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/aion-labs/aion-rp-llama-3.1-8b": {
+      "input": 0.8,
+      "output": 1.6,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/amazon/nova-2-lite-v1": {
+      "input": 0.3,
+      "output": 2.5,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/amazon/nova-lite-v1": {
+      "input": 0.06,
+      "output": 0.24,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/amazon/nova-micro-v1": {
+      "input": 0.035,
+      "output": 0.14,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/amazon/nova-premier-v1": {
+      "input": 2.5,
+      "output": 12.5,
+      "cached_input": 0.625,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/amazon/nova-pro-v1": {
+      "input": 0.8,
+      "output": 3.2,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/anthracite-org/magnum-v4-72b": {
+      "input": 2.5,
+      "output": 5,
+      "cached_input": 2.5,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/anthropic/claude-fable-5": {
+      "input": 10,
+      "output": 50,
+      "cached_input": 1,
+      "cache_write": 12.5,
+      "cache_write_1h": 20,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-fable-5:batch": {
+      "input": 5,
+      "output": 25,
+      "cached_input": 0.5,
+      "cache_write": 6.25,
+      "cache_write_1h": 10,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-fable-5.1": {
+      "input": 10,
+      "output": 50,
+      "cached_input": 0.25,
+      "cache_write": 12.5,
+      "cache_write_1h": 20,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-fable-5.1:batch": {
+      "input": 5,
+      "output": 25,
+      "cached_input": 0.125,
+      "cache_write": 6.25,
+      "cache_write_1h": 10,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-fable-5.2": {
+      "input": 8,
+      "output": 40,
+      "cached_input": 0.2,
+      "cache_write": 10,
+      "cache_write_1h": 16,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-fable-5.2:batch": {
+      "input": 4,
+      "output": 20,
+      "cached_input": 0.1,
+      "cache_write": 5,
+      "cache_write_1h": 8,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-haiku-4.5": {
+      "input": 1,
+      "output": 5,
+      "cached_input": 0.1,
+      "cache_write": 1.25,
+      "cache_write_1h": 2,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-haiku-4.5:batch": {
+      "input": 0.5,
+      "output": 2.5,
+      "cached_input": 0.05,
+      "cache_write": 0.625,
+      "cache_write_1h": 1,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-haiku-5.5": {
+      "input": 0.1,
+      "output": 0.5,
+      "cached_input": 0.01,
+      "cache_write": 0.125,
+      "cache_write_1h": 0.2,
+      "tiers": [
+        {
+          "above_prompt_tokens": 99999,
+          "input": 0.5,
+          "output": 2.5,
+          "cached_input": 0.05,
+          "cache_write": 0.625,
+          "cache_write_1h": 1
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-haiku-5.5:batch": {
+      "input": 0.05,
+      "output": 0.25,
+      "cached_input": 0.005,
+      "cache_write": 0.0625,
+      "cache_write_1h": 0.1,
+      "tiers": [
+        {
+          "above_prompt_tokens": 99999,
+          "input": 0.25,
+          "output": 1.25,
+          "cached_input": 0.025,
+          "cache_write": 0.3125,
+          "cache_write_1h": 0.5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-opus-4.1": {
+      "input": 15,
+      "output": 75,
+      "cached_input": 1.5,
+      "cache_write": 18.75,
+      "cache_write_1h": 30,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-opus-4.1:batch": {
+      "input": 7.5,
+      "output": 37.5,
+      "cached_input": 0.75,
+      "cache_write": 9.375,
+      "cache_write_1h": 15,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-opus-4.5": {
+      "input": 5,
+      "output": 25,
+      "cached_input": 0.5,
+      "cache_write": 6.25,
+      "cache_write_1h": 10,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-opus-4.5:batch": {
+      "input": 2.5,
+      "output": 12.5,
+      "cached_input": 0.25,
+      "cache_write": 3.125,
+      "cache_write_1h": 5,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-opus-4.6": {
+      "input": 5,
+      "output": 25,
+      "cached_input": 0.5,
+      "cache_write": 6.25,
+      "cache_write_1h": 10,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-opus-4.6:batch": {
+      "input": 2.5,
+      "output": 12.5,
+      "cached_input": 0.25,
+      "cache_write": 3.125,
+      "cache_write_1h": 5,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-opus-4.7": {
+      "input": 5,
+      "output": 25,
+      "cached_input": 0.5,
+      "cache_write": 6.25,
+      "cache_write_1h": 10,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-opus-4.7:batch": {
+      "input": 2.5,
+      "output": 12.5,
+      "cached_input": 0.25,
+      "cache_write": 3.125,
+      "cache_write_1h": 5,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-opus-4.8": {
+      "input": 5,
+      "output": 25,
+      "cached_input": 0.5,
+      "cache_write": 6.25,
+      "cache_write_1h": 10,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-opus-4.8:batch": {
+      "input": 2.5,
+      "output": 12.5,
+      "cached_input": 0.25,
+      "cache_write": 3.125,
+      "cache_write_1h": 5,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-opus-5": {
+      "input": 5,
+      "output": 25,
+      "cached_input": 0.5,
+      "cache_write": 6.25,
+      "cache_write_1h": 10,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-opus-5:batch": {
+      "input": 2.5,
+      "output": 12.5,
+      "cached_input": 0.25,
+      "cache_write": 3.125,
+      "cache_write_1h": 5,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-opus-5.5": {
+      "input": 4,
+      "output": 20,
+      "cached_input": 0.2,
+      "cache_write": 5,
+      "cache_write_1h": 8,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-opus-5.5:batch": {
+      "input": 2,
+      "output": 10,
+      "cached_input": 0.1,
+      "cache_write": 2.5,
+      "cache_write_1h": 4,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-sonnet-4.5": {
+      "input": 3,
+      "output": 15,
+      "cached_input": 0.3,
+      "cache_write": 3.75,
+      "cache_write_1h": 6,
+      "tiers": [
+        {
+          "above_prompt_tokens": 199999,
+          "input": 6,
+          "output": 22.5,
+          "cached_input": 0.6,
+          "cache_write": 7.5,
+          "cache_write_1h": 12
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-sonnet-4.5:batch": {
+      "input": 1.5,
+      "output": 7.5,
+      "cached_input": 0.15,
+      "cache_write": 1.875,
+      "cache_write_1h": 3,
+      "tiers": [
+        {
+          "above_prompt_tokens": 199999,
+          "input": 3,
+          "output": 11.25,
+          "cached_input": 0.3,
+          "cache_write": 3.75,
+          "cache_write_1h": 6
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-sonnet-4.6": {
+      "input": 3,
+      "output": 15,
+      "cached_input": 0.3,
+      "cache_write": 3.75,
+      "cache_write_1h": 6,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-sonnet-4.6:batch": {
+      "input": 1.5,
+      "output": 7.5,
+      "cached_input": 0.15,
+      "cache_write": 1.875,
+      "cache_write_1h": 3,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-sonnet-5": {
+      "input": 2,
+      "output": 10,
+      "cached_input": 0.2,
+      "cache_write": 2.5,
+      "cache_write_1h": 4,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-sonnet-5:batch": {
+      "input": 1,
+      "output": 5,
+      "cached_input": 0.1,
+      "cache_write": 1.25,
+      "cache_write_1h": 2,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-sonnet-5.5": {
+      "input": 2,
+      "output": 10,
+      "cached_input": 0.1,
+      "cache_write": 2.5,
+      "cache_write_1h": 4,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/anthropic/claude-sonnet-5.5:batch": {
+      "input": 1,
+      "output": 5,
+      "cached_input": 0.05,
+      "cache_write": 1.25,
+      "cache_write_1h": 2,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/baidu/ernie-5.5-flash-preview:free": {
+      "input": 0,
+      "output": 0,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/baidu/ernie-light-dt-1.0-intl": {
+      "input": 1.13,
+      "output": 3.94,
+      "cached_input": 0.113,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/bytedance-seed/seed-2-1-turbo": {
+      "input": 0.5,
+      "output": 2.5,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/bytedance-seed/seed-2.0-lite": {
+      "input": 0.25,
+      "output": 2,
+      "tiers": [
+        {
+          "above_prompt_tokens": 127999,
+          "input": 0.5,
+          "output": 4
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/bytedance-seed/seed-2.0-mini": {
+      "input": 0.1,
+      "output": 0.4,
+      "tiers": [
+        {
+          "above_prompt_tokens": 127999,
+          "input": 0.2,
+          "output": 0.8
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/bytedance/ui-tars-1.5-7b": {
+      "input": 0.1,
+      "output": 0.2,
+      "cached_input": 0.1,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/cognitivecomputations/dolphin-mistral-24b-venice-edition": {
+      "input": 0.2,
+      "output": 0.9,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/cohere/command-a": {
+      "input": 2.5,
+      "output": 10,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/cohere/command-a-plus": {
+      "input": 0.3,
+      "output": 1.5,
+      "cached_input": 0.15,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/cohere/command-r-08-2024": {
+      "input": 0.15,
+      "output": 0.6,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/cohere/command-r-plus-08-2024": {
+      "input": 2.5,
+      "output": 10,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/cohere/command-r7b-12-2024": {
+      "input": 0.0375,
+      "output": 0.15,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/deepseek/deepseek-chat": {
+      "input": 0.2574,
+      "output": 1.0287,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/deepseek/deepseek-chat-v3-0324": {
+      "input": 0.25,
+      "output": 1,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/deepseek/deepseek-chat-v3.1": {
+      "input": 0.25,
+      "output": 0.95,
+      "cached_input": 0.13,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/deepseek/deepseek-r1-0528": {
+      "input": 0.571,
+      "output": 2.286,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/deepseek/deepseek-v3.1-terminus": {
+      "input": 0.27,
+      "output": 1,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/deepseek/deepseek-v3.2": {
+      "input": 0.26,
+      "output": 0.38,
+      "cached_input": 0.13,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/deepseek/deepseek-v3.2-exp": {
+      "input": 0.27,
+      "output": 0.41,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/deepseek/deepseek-v4-flash": {
+      "input": 0.09,
+      "output": 0.18,
+      "cached_input": 0.018,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/deepseek/deepseek-v4-flash-0731": {
+      "input": 0.0443,
+      "output": 0.3,
+      "cached_input": 0.035,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/deepseek/deepseek-v4-flash-0731:batch": {
+      "input": 0.048,
+      "output": 0.144,
+      "cached_input": 0.012,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/deepseek/deepseek-v4-flash-vision-exp": {
+      "input": 0.2156,
+      "output": 0.6468,
+      "cached_input": 0.00686,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/deepseek/deepseek-v4-pro": {
+      "input": 0.9,
+      "output": 1.5,
+      "cached_input": 0.2,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/deepseek/deepseek-v4-pro-0813": {
+      "input": 1.32,
+      "output": 3.96,
+      "cached_input": 0.044,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/deepseek/deepseek-v4.1-flash": {
+      "input": 0.0498,
+      "output": 0.1992,
+      "cached_input": 0.000996,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/deepseek/deepseek-v4.1-flash-1017": {
+      "input": 0.3,
+      "output": 1.2,
+      "cached_input": 0.006,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Time-of-day rates vary; priced at the highest."
+    },
+    "openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
+      "input": 0.035,
+      "output": 0.149,
+      "cached_input": 0.0029,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/deepseek/deepseek-v4.1-flash:batch": {
+      "input": 0.05,
+      "output": 0.15,
+      "cached_input": 0.004,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/elorian/glimpse": {
+      "input": 0.6,
+      "output": 3,
+      "cached_input": 0.06,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/fireworks/ember-1": {
+      "input": 3,
+      "output": 15,
+      "cached_input": 0.3,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/google/gemini-2.5-flash": {
+      "input": 0.3,
+      "output": 2.5,
+      "cached_input": 0.03,
+      "cache_write": 0.083333333,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-2.5-flash-image": {
+      "input": 0.3,
+      "output": 2.5,
+      "cached_input": 0.03,
+      "cache_write": 0.083333333,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-2.5-flash-lite": {
+      "input": 0.1,
+      "output": 0.4,
+      "cached_input": 0.01,
+      "cache_write": 0.083333333,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-2.5-pro": {
+      "input": 1.25,
+      "output": 10,
+      "cached_input": 0.125,
+      "cache_write": 0.375,
+      "tiers": [
+        {
+          "above_prompt_tokens": 199999,
+          "input": 2.5,
+          "output": 15,
+          "cached_input": 0.25,
+          "cache_write": 0.375
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-2.5-pro-preview": {
+      "input": 1.25,
+      "output": 10,
+      "cached_input": 0.125,
+      "cache_write": 0.375,
+      "tiers": [
+        {
+          "above_prompt_tokens": 199999,
+          "input": 2.5,
+          "output": 15,
+          "cached_input": 0.25,
+          "cache_write": 0.375
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-3-flash-preview": {
+      "input": 0.5,
+      "output": 3,
+      "cached_input": 0.05,
+      "cache_write": 0.083333333,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-3-flash-preview:batch": {
+      "input": 0.25,
+      "output": 1.5,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-3-pro-image": {
+      "input": 2,
+      "output": 12,
+      "cached_input": 0.2,
+      "cache_write": 0.375,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-3-pro-image-preview": {
+      "input": 2,
+      "output": 12,
+      "cached_input": 0.2,
+      "cache_write": 0.375,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-3.1-flash-image": {
+      "input": 0.5,
+      "output": 3,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-3.1-flash-image-preview": {
+      "input": 0.5,
+      "output": 3,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-3.1-flash-lite": {
+      "input": 0.25,
+      "output": 1.5,
+      "cached_input": 0.025,
+      "cache_write": 0.083333333,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-3.1-flash-lite-image": {
+      "input": 0.25,
+      "output": 1.5,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-3.1-flash-lite-preview": {
+      "input": 0.25,
+      "output": 1.5,
+      "cached_input": 0.025,
+      "cache_write": 0.083333333,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-3.1-flash-lite:batch": {
+      "input": 0.125,
+      "output": 0.75,
+      "cached_input": 0.0125,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-3.1-pro-preview": {
+      "input": 2,
+      "output": 12,
+      "cached_input": 0.2,
+      "cache_write": 0.375,
+      "tiers": [
+        {
+          "above_prompt_tokens": 199999,
+          "input": 4,
+          "output": 18,
+          "cached_input": 0.4,
+          "cache_write": 0.375
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-3.1-pro-preview-customtools": {
+      "input": 2,
+      "output": 12,
+      "cached_input": 0.2,
+      "cache_write": 0.375,
+      "tiers": [
+        {
+          "above_prompt_tokens": 199999,
+          "input": 4,
+          "output": 18,
+          "cached_input": 0.4,
+          "cache_write": 0.375
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-3.1-pro-preview:batch": {
+      "input": 1,
+      "output": 6,
+      "tiers": [
+        {
+          "above_prompt_tokens": 199999,
+          "input": 2,
+          "output": 9
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-3.5-flash": {
+      "input": 1.5,
+      "output": 9,
+      "cached_input": 0.15,
+      "cache_write": 0.083333333,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-3.5-flash-lite": {
+      "input": 0.3,
+      "output": 2.5,
+      "cached_input": 0.03,
+      "cache_write": 0.083333333,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-3.5-flash-lite:batch": {
+      "input": 0.15,
+      "output": 1.25,
+      "cached_input": 0.015,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-3.5-flash:batch": {
+      "input": 0.75,
+      "output": 4.5,
+      "cached_input": 0.075,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-3.6-flash": {
+      "input": 0.75,
+      "output": 3.75,
+      "cached_input": 0.075,
+      "cache_write": 0.041666667,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-3.6-flash:batch": {
+      "input": 0.375,
+      "output": 1.875,
+      "cached_input": 0.0375,
+      "cache_write": 0.041666667,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-3.7-flash": {
+      "input": 0.75,
+      "output": 3.75,
+      "cached_input": 0.075,
+      "cache_write": 0.041666667,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-3.7-flash:batch": {
+      "input": 0.375,
+      "output": 1.875,
+      "cached_input": 0.0375,
+      "cache_write": 0.041666667,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-3.8-flash": {
+      "input": 0.825,
+      "output": 4.125,
+      "cached_input": 0.0825,
+      "cache_write": 0.041666667,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-3.8-flash:batch": {
+      "input": 0.375,
+      "output": 1.875,
+      "cached_input": 0.0375,
+      "cache_write": 0.041666667,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-4-argon": {
+      "input": 2,
+      "output": 10,
+      "cached_input": 0.1,
+      "cache_write": 0.1875,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-4-argon:batch": {
+      "input": 1,
+      "output": 5,
+      "cached_input": 0.05,
+      "cache_write": 0.1875,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-4-carbon": {
+      "input": 2,
+      "output": 10,
+      "cached_input": 0.1,
+      "cache_write": 0.1875,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-4-carbon:batch": {
+      "input": 1,
+      "output": 5,
+      "cached_input": 0.05,
+      "cache_write": 0.1875,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-4-hydrogen": {
+      "input": 1.5,
+      "output": 7.5,
+      "cached_input": 0.075,
+      "cache_write": 0.083333333,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-4-hydrogen:batch": {
+      "input": 0.75,
+      "output": 3.75,
+      "cached_input": 0.0375,
+      "cache_write": 0.083333333,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-4-neon": {
+      "input": 3,
+      "output": 15,
+      "cached_input": 0.15,
+      "cache_write": 0.083333333,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-4-neon:batch": {
+      "input": 1.5,
+      "output": 7.5,
+      "cached_input": 0.075,
+      "cache_write": 0.083333333,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-nano-banana-2.1": {
+      "input": 1.5,
+      "output": 7.5,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-omni-1.1-flash": {
+      "input": 1.5,
+      "output": 9,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemini-omni-1.2-flash": {
+      "input": 1.5,
+      "output": 9,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/google/gemma-2-27b-it": {
+      "input": 0.65,
+      "output": 0.65,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/google/gemma-3-12b-it": {
+      "input": 0.05,
+      "output": 0.15,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/google/gemma-3-27b-it": {
+      "input": 0.08,
+      "output": 0.45,
+      "cached_input": 0.04,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/google/gemma-3-4b-it": {
+      "input": 0.05,
+      "output": 0.1,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/google/gemma-4-26b-a4b-it": {
+      "input": 0.0675,
+      "output": 0.225,
+      "cached_input": 0.0375,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/google/gemma-4-26b-a4b-it:free": {
+      "input": 0,
+      "output": 0,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/google/gemma-4-31b-it": {
+      "input": 0.2,
+      "output": 0.4,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/google/gemma-4-31b-it:free": {
+      "input": 0,
+      "output": 0,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/google/lyria-3-clip-preview": {
+      "input": 0,
+      "output": 0,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/google/lyria-3-pro-preview": {
+      "input": 0,
+      "output": 0,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/gryphe/mythomax-l2-13b": {
+      "input": 0.08,
+      "output": 0.11,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/ibm-granite/granite-4.2-8b": {
+      "input": 0.06,
+      "output": 0.15,
+      "cached_input": 0.015,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/inclusionai/ling-3.0-flash": {
+      "input": 0.021,
+      "output": 0.063,
+      "cached_input": 0.0042,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/inclusionai/ling-3.0-flash-vl": {
+      "input": 0.06,
+      "output": 0.18,
+      "cached_input": 0.012,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/inclusionai/ling-3.0-tiny": {
+      "input": 0.015,
+      "output": 0.045,
+      "cached_input": 0.003,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/inclusionai/ling-3.1-flash": {
+      "input": 0.06,
+      "output": 0.18,
+      "cached_input": 0.012,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/inclusionai/ling-3.2-flash:free": {
+      "input": 0,
+      "output": 0,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/inference-net/schematron-v2-small": {
+      "input": 0.05,
+      "output": 0.23,
+      "cached_input": 0.05,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/inference-net/schematron-v2-turbo": {
+      "input": 0.03,
+      "output": 0.15,
+      "cached_input": 0.03,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/kt/midm-k-3.0-pro": {
+      "input": 0.2,
+      "output": 0.8,
+      "cached_input": 0.04,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/liquid/lfm-2.5-24b-a2b": {
+      "input": 0.05,
+      "output": 0.7,
+      "cached_input": 0.025,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/liquid/lfm-3-1.7b": {
+      "input": 0.08,
+      "output": 0.2,
+      "cached_input": 0.02,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/liquid/lfm-3-1.7b:free": {
+      "input": 0,
+      "output": 0,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/mancer/weaver": {
+      "input": 0.3,
+      "output": 0.5,
+      "cached_input": 0.3,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/meta-llama/llama-3.1-70b-instruct": {
+      "input": 0.72,
+      "output": 0.72,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/meta-llama/llama-3.1-8b-instruct": {
+      "input": 0.02,
+      "output": 0.04,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/meta-llama/llama-3.2-3b-instruct": {
+      "input": 0.05,
+      "output": 0.33,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/meta-llama/llama-3.3-70b-instruct": {
+      "input": 0.71,
+      "output": 0.71,
+      "cached_input": 0.71,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/meta-llama/llama-4-maverick": {
+      "input": 0.35,
+      "output": 1,
+      "cached_input": 0.17,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/meta-llama/llama-4-scout": {
+      "input": 0.1,
+      "output": 0.3,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/meta-llama/llama-guard-4-12b": {
+      "input": 0.18,
+      "output": 0.18,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/meta/muse-ember": {
+      "input": 0.1,
+      "output": 0.5,
+      "cached_input": 0.004,
+      "cache_write": 0.125,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/meta/muse-glimmer-30b": {
+      "input": 0.35,
+      "output": 1.5,
+      "cached_input": 0.04,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/meta/muse-glimmer-30b:batch": {
+      "input": 0.24,
+      "output": 0.96,
+      "cached_input": 0.032,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/meta/muse-spark-1.1": {
+      "input": 1.25,
+      "output": 4.25,
+      "cached_input": 0.15,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/meta/muse-spark-1.2": {
+      "input": 1.25,
+      "output": 4.25,
+      "cached_input": 0.15,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/meta/muse-spark-1.2-contributor": {
+      "input": 0.1,
+      "output": 0.2,
+      "cached_input": 0.002,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/meta/muse-spark-1.3": {
+      "input": 1.25,
+      "output": 4.25,
+      "cached_input": 0.15,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/meta/muse-spark-1.3-contributor": {
+      "input": 0.1,
+      "output": 0.2,
+      "cached_input": 0.002,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/meta/muse-spark-open": {
+      "input": 1.25,
+      "output": 4.25,
+      "cached_input": 0.15,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/meta/muse-wonder": {
+      "input": 4,
+      "output": 20,
+      "cached_input": 0.2,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/microsoft/phi-4": {
+      "input": 0.07,
+      "output": 0.14,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/minimax/minimax-m2.5": {
+      "input": 0.27,
+      "output": 0.95,
+      "cached_input": 0.03,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/minimax/minimax-m2.7": {
+      "input": 0.6,
+      "output": 1.8,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/minimax/minimax-m3": {
+      "input": 0.3,
+      "output": 1.2,
+      "cached_input": 0.06,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/minimax/minimax-m3:batch": {
+      "input": 0.224,
+      "output": 0.88,
+      "cached_input": 0.0448,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/minimax/minimax-m3.1-flash": {
+      "input": 0.15,
+      "output": 0.6,
+      "cached_input": 0.015,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Time-of-day rates vary; priced at the highest."
+    },
+    "openrouter/mistralai/codestral-2508": {
+      "input": 0.3,
+      "output": 0.9,
+      "cached_input": 0.03,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/mistralai/devstral-2512": {
+      "input": 0.4,
+      "output": 2,
+      "cached_input": 0.04,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/mistralai/ministral-14b-2512": {
+      "input": 0.2,
+      "output": 0.2,
+      "cached_input": 0.02,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/mistralai/ministral-3b-2512": {
+      "input": 0.1,
+      "output": 0.1,
+      "cached_input": 0.01,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/mistralai/ministral-8b-2512": {
+      "input": 0.15,
+      "output": 0.15,
+      "cached_input": 0.015,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/mistralai/mistral-large": {
+      "input": 2,
+      "output": 6,
+      "cached_input": 0.2,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/mistralai/mistral-large-2407": {
+      "input": 2,
+      "output": 6,
+      "cached_input": 0.2,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/mistralai/mistral-large-2512": {
+      "input": 0.5,
+      "output": 1.5,
+      "cached_input": 0.05,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/mistralai/mistral-large-4-0": {
+      "input": 0.7,
+      "output": 2.1,
+      "cached_input": 0.07,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/mistralai/mistral-medium-3": {
+      "input": 0.44,
+      "output": 2.2,
+      "cached_input": 0.044,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/mistralai/mistral-medium-3-5": {
+      "input": 1.5,
+      "output": 7.5,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/mistralai/mistral-medium-3-5:batch": {
+      "input": 0.75,
+      "output": 3.75,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/mistralai/mistral-medium-3.1": {
+      "input": 0.44,
+      "output": 2.2,
+      "cached_input": 0.044,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/mistralai/mistral-nemo": {
+      "input": 0.029,
+      "output": 0.03,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/mistralai/mistral-saba": {
+      "input": 0.2,
+      "output": 0.6,
+      "cached_input": 0.02,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/mistralai/mistral-small-24b-instruct-2501": {
+      "input": 0.05,
+      "output": 0.08,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/mistralai/mistral-small-2603": {
+      "input": 0.15,
+      "output": 0.6,
+      "cached_input": 0.015,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/mistralai/mistral-small-3.1-24b-instruct": {
+      "input": 0.351,
+      "output": 0.555,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/mistralai/mistral-small-3.2-24b-instruct": {
+      "input": 0.075,
+      "output": 0.2,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/mistralai/mixtral-8x22b-instruct": {
+      "input": 2,
+      "output": 6,
+      "cached_input": 0.2,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/mistralai/pixtral-large-2502": {
+      "input": 2,
+      "output": 6,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/mistralai/voxtral-small-24b-2507": {
+      "input": 0.1,
+      "output": 0.3,
+      "cached_input": 0.01,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/moondream/moondream3-preview": {
+      "input": 0.3,
+      "output": 2.5,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/moondream/moondream3.1-9b-a2b": {
+      "input": 0.3,
+      "output": 2.5,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/moonshotai/kimi-k2": {
+      "input": 0.57,
+      "output": 2.3,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/moonshotai/kimi-k2-0905": {
+      "input": 0.6,
+      "output": 2.5,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/moonshotai/kimi-k2-thinking": {
+      "input": 0.6,
+      "output": 2.5,
+      "cached_input": 0.15,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/moonshotai/kimi-k2.5": {
+      "input": 0.5,
+      "output": 2.5,
+      "cached_input": 0.15,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/moonshotai/kimi-k2.6": {
+      "input": 0.65,
+      "output": 3.41,
+      "cached_input": 0.15,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/moonshotai/kimi-k2.7-code": {
+      "input": 0.6,
+      "output": 3,
+      "cached_input": 0.12,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/moonshotai/kimi-k3": {
+      "input": 0.192,
+      "output": 16,
+      "cached_input": 0.182,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/moonshotai/kimi-k3:batch": {
+      "input": 2.28,
+      "output": 11.4,
+      "cached_input": 0.228,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/moonshotai/kimi-k3.1-pro": {
+      "input": 0.253,
+      "output": 8.8,
+      "cached_input": 0.18,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/moonshotai/kimi-k3.1-pro:batch": {
+      "input": 0.372,
+      "output": 5.583,
+      "cached_input": 0.1,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/morph/morph-v3-fast": {
+      "input": 0.8,
+      "output": 1.2,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/morph/morph-v3-fast:batch": {
+      "input": 0.4,
+      "output": 0.6,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/morph/morph-v3-large": {
+      "input": 0.9,
+      "output": 1.9,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/morph/morph-v3-large:batch": {
+      "input": 0.45,
+      "output": 0.95,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/motif-technologies/motif-3": {
+      "input": 0.3,
+      "output": 1.2,
+      "cached_input": 0.06,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/nex-agi/nex-n2.5-mini": {
+      "input": 0.025,
+      "output": 0.1,
+      "cached_input": 0.0025,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/nex-agi/nex-n2.5-pro": {
+      "input": 0.075,
+      "output": 0.25,
+      "cached_input": 0.015,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/nex-agi/nex-n2.6": {
+      "input": 0.12,
+      "output": 0.4,
+      "cached_input": 0.024,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/nousresearch/hermes-4-405b": {
+      "input": 1,
+      "output": 3,
+      "cached_input": 0.2,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/nvidia/nemotron-3-nano-30b-a3b": {
+      "input": 0.06,
+      "output": 0.24,
+      "cached_input": 0.012,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
+      "input": 0,
+      "output": 0,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/nvidia/nemotron-3-super-120b-a12b": {
+      "input": 0.075,
+      "output": 0.4,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/nvidia/nemotron-3-ultra-550b-a55b": {
+      "input": 0.5,
+      "output": 2.2,
+      "cached_input": 0.1,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/nvidia/nemotron-3-ultra-550b-a55b:free": {
+      "input": 0,
+      "output": 0,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/nvidia/nemotron-3.5-content-safety": {
+      "input": 0.2,
+      "output": 0.2,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/nvidia/nemotron-3.5-lightning": {
+      "input": 0.07,
+      "output": 0.2,
+      "cached_input": 0.04,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/nvidia/nemotron-3.5-lightning:free": {
+      "input": 0,
+      "output": 0,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/nvidia/nemotron-3.5-super-vl": {
+      "input": 0.15,
+      "output": 0.47,
+      "cached_input": 0.02,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/nvidia/nemotron-3.5-super-vl:free": {
+      "input": 0,
+      "output": 0,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/openai/gpt-3.5-turbo-0613": {
+      "input": 1,
+      "output": 2,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/openai/gpt-3.5-turbo-16k": {
+      "input": 3,
+      "output": 4,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/openai/gpt-4": {
+      "input": 30,
+      "output": 60,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/openai/gpt-4-turbo:batch": {
+      "input": 5,
+      "output": 15,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-4.1": {
+      "input": 2,
+      "output": 8,
+      "cached_input": 0.5,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-4.1-mini": {
+      "input": 0.4,
+      "output": 1.6,
+      "cached_input": 0.1,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-4.1-mini:batch": {
+      "input": 0.2,
+      "output": 0.8,
+      "cached_input": 0.05,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-4.1-nano": {
+      "input": 0.1,
+      "output": 0.4,
+      "cached_input": 0.03,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-4.1-nano:batch": {
+      "input": 0.05,
+      "output": 0.2,
+      "cached_input": 0.0125,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-4.1:batch": {
+      "input": 1,
+      "output": 4,
+      "cached_input": 0.25,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-4o": {
+      "input": 2.5,
+      "output": 10,
+      "cached_input": 1.25,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/openai/gpt-4o-2024-05-13": {
+      "input": 5,
+      "output": 15,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/openai/gpt-4o-2024-08-06": {
+      "input": 2.5,
+      "output": 10,
+      "cached_input": 1.25,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/openai/gpt-4o-2024-11-20": {
+      "input": 2.5,
+      "output": 10,
+      "cached_input": 1.25,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/openai/gpt-4o-mini": {
+      "input": 0.15,
+      "output": 0.6,
+      "cached_input": 0.075,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/openai/gpt-4o-mini-2024-07-18": {
+      "input": 0.15,
+      "output": 0.6,
+      "cached_input": 0.075,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/openai/gpt-4o-mini:batch": {
+      "input": 0.075,
+      "output": 0.3,
+      "cached_input": 0.0375,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-4o:batch": {
+      "input": 1.25,
+      "output": 5,
+      "cached_input": 0.625,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5": {
+      "input": 1.25,
+      "output": 10,
+      "cached_input": 0.125,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5-image": {
+      "input": 10,
+      "output": 10,
+      "cached_input": 1.25,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5-image-mini": {
+      "input": 2.5,
+      "output": 2,
+      "cached_input": 0.25,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5-mini": {
+      "input": 0.25,
+      "output": 2,
+      "cached_input": 0.025,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5-mini:batch": {
+      "input": 0.125,
+      "output": 1,
+      "cached_input": 0.0125,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5-nano": {
+      "input": 0.05,
+      "output": 0.4,
+      "cached_input": 0.005,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5-nano:batch": {
+      "input": 0.025,
+      "output": 0.2,
+      "cached_input": 0.0025,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5-pro": {
+      "input": 15,
+      "output": 120,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5-pro:batch": {
+      "input": 7.5,
+      "output": 60,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5:batch": {
+      "input": 0.625,
+      "output": 5,
+      "cached_input": 0.0625,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.1": {
+      "input": 1.25,
+      "output": 10,
+      "cached_input": 0.125,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.1-codex": {
+      "input": 1.25,
+      "output": 10,
+      "cached_input": 0.13,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.1-codex-max": {
+      "input": 1.25,
+      "output": 10,
+      "cached_input": 0.125,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.1-codex-mini": {
+      "input": 0.25,
+      "output": 2,
+      "cached_input": 0.03,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.1:batch": {
+      "input": 0.625,
+      "output": 5,
+      "cached_input": 0.0625,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.2": {
+      "input": 1.75,
+      "output": 14,
+      "cached_input": 0.175,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.2-chat": {
+      "input": 1.75,
+      "output": 14,
+      "cached_input": 0.175,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.2-codex": {
+      "input": 1.75,
+      "output": 14,
+      "cached_input": 0.175,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.2-pro": {
+      "input": 21,
+      "output": 168,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.2-pro:batch": {
+      "input": 10.5,
+      "output": 84,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.2:batch": {
+      "input": 0.875,
+      "output": 7,
+      "cached_input": 0.0875,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.3-codex": {
+      "input": 1.75,
+      "output": 14,
+      "cached_input": 0.175,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.4": {
+      "input": 2.5,
+      "output": 15,
+      "cached_input": 0.25,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 5,
+          "output": 22.5,
+          "cached_input": 0.5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.4-image-2": {
+      "input": 8,
+      "output": 15,
+      "cached_input": 2,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.4-mini": {
+      "input": 0.75,
+      "output": 4.5,
+      "cached_input": 0.075,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.4-mini:batch": {
+      "input": 0.375,
+      "output": 2.25,
+      "cached_input": 0.0375,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.4-nano": {
+      "input": 0.2,
+      "output": 1.25,
+      "cached_input": 0.02,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.4-nano:batch": {
+      "input": 0.1,
+      "output": 0.625,
+      "cached_input": 0.01,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.4-pro": {
+      "input": 30,
+      "output": 180,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 60,
+          "output": 270
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.4-pro:batch": {
+      "input": 15,
+      "output": 90,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 30,
+          "output": 135
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.4:batch": {
+      "input": 1.25,
+      "output": 7.5,
+      "cached_input": 0.125,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 2.5,
+          "output": 11.25,
+          "cached_input": 0.25
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.5": {
+      "input": 5,
+      "output": 30,
+      "cached_input": 0.5,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 10,
+          "output": 45,
+          "cached_input": 1
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.5-pro": {
+      "input": 30,
+      "output": 180,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 60,
+          "output": 270
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.5-pro:batch": {
+      "input": 15,
+      "output": 90,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 30,
+          "output": 135
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.5:batch": {
+      "input": 2.5,
+      "output": 15,
+      "cached_input": 0.25,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 5,
+          "output": 22.5,
+          "cached_input": 0.5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.6-luna": {
+      "input": 0.2,
+      "output": 1.2,
+      "cached_input": 0.02,
+      "cache_write": 0.25,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 0.4,
+          "output": 1.8,
+          "cached_input": 0.04,
+          "cache_write": 0.5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.6-luna-pro": {
+      "input": 0.2,
+      "output": 1.2,
+      "cached_input": 0.02,
+      "cache_write": 0.25,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 0.4,
+          "output": 1.8,
+          "cached_input": 0.04,
+          "cache_write": 0.5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.6-luna-pro:batch": {
+      "input": 0.1,
+      "output": 0.6,
+      "cached_input": 0.01,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 0.2,
+          "output": 0.9,
+          "cached_input": 0.02
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.6-luna:batch": {
+      "input": 0.1,
+      "output": 0.6,
+      "cached_input": 0.01,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 0.2,
+          "output": 0.9,
+          "cached_input": 0.02
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.6-sol": {
+      "input": 4,
+      "output": 20,
+      "cached_input": 0.4,
+      "cache_write": 5,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 8,
+          "output": 30,
+          "cached_input": 0.8,
+          "cache_write": 10
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.6-sol-pro": {
+      "input": 4,
+      "output": 20,
+      "cached_input": 0.4,
+      "cache_write": 5,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 8,
+          "output": 30,
+          "cached_input": 0.8,
+          "cache_write": 10
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.6-sol-pro:batch": {
+      "input": 2,
+      "output": 10,
+      "cached_input": 0.2,
+      "cache_write": 2.5,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 4,
+          "output": 15,
+          "cached_input": 0.4,
+          "cache_write": 5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.6-sol:batch": {
+      "input": 2,
+      "output": 10,
+      "cached_input": 0.2,
+      "cache_write": 2.5,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 4,
+          "output": 15,
+          "cached_input": 0.4,
+          "cache_write": 5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.6-terra": {
+      "input": 2,
+      "output": 12,
+      "cached_input": 0.2,
+      "cache_write": 2.5,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 4,
+          "output": 18,
+          "cached_input": 0.4,
+          "cache_write": 5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.6-terra-pro": {
+      "input": 2,
+      "output": 12,
+      "cached_input": 0.2,
+      "cache_write": 2.5,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 4,
+          "output": 18,
+          "cached_input": 0.4,
+          "cache_write": 5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.6-terra-pro:batch": {
+      "input": 1,
+      "output": 6,
+      "cached_input": 0.1,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 2,
+          "output": 9,
+          "cached_input": 0.2
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-5.6-terra:batch": {
+      "input": 1,
+      "output": 6,
+      "cached_input": 0.1,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 2,
+          "output": 9,
+          "cached_input": 0.2
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6-astra": {
+      "input": 10,
+      "output": 50,
+      "cached_input": 1,
+      "cache_write": 12.5,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 20,
+          "output": 75,
+          "cached_input": 2,
+          "cache_write": 25
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6-astra-pro": {
+      "input": 10,
+      "output": 50,
+      "cached_input": 1,
+      "cache_write": 12.5,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 20,
+          "output": 75,
+          "cached_input": 2,
+          "cache_write": 25
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6-astra-pro:batch": {
+      "input": 5,
+      "output": 25,
+      "cached_input": 0.5,
+      "cache_write": 6.25,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 10,
+          "output": 37.5,
+          "cached_input": 1,
+          "cache_write": 12.5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6-astra:batch": {
+      "input": 5,
+      "output": 25,
+      "cached_input": 0.5,
+      "cache_write": 6.25,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 10,
+          "output": 37.5,
+          "cached_input": 1,
+          "cache_write": 12.5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6-luna": {
+      "input": 0.1,
+      "output": 0.5,
+      "cached_input": 0.01,
+      "cache_write": 0.125,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 0.2,
+          "output": 0.75,
+          "cached_input": 0.02,
+          "cache_write": 0.25
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6-luna-pro": {
+      "input": 0.1,
+      "output": 0.5,
+      "cached_input": 0.01,
+      "cache_write": 0.125,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 0.2,
+          "output": 0.75,
+          "cached_input": 0.02,
+          "cache_write": 0.25
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6-luna-pro:batch": {
+      "input": 0.05,
+      "output": 0.25,
+      "cached_input": 0.005,
+      "cache_write": 0.0625,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 0.1,
+          "output": 0.375,
+          "cached_input": 0.01,
+          "cache_write": 0.125
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6-luna:batch": {
+      "input": 0.05,
+      "output": 0.25,
+      "cached_input": 0.005,
+      "cache_write": 0.0625,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 0.1,
+          "output": 0.375,
+          "cached_input": 0.01,
+          "cache_write": 0.125
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6-sol": {
+      "input": 2,
+      "output": 10,
+      "cached_input": 0.2,
+      "cache_write": 2.5,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 4,
+          "output": 15,
+          "cached_input": 0.4,
+          "cache_write": 5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6-sol-pro": {
+      "input": 2,
+      "output": 10,
+      "cached_input": 0.2,
+      "cache_write": 2.5,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 4,
+          "output": 15,
+          "cached_input": 0.4,
+          "cache_write": 5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6-sol-pro:batch": {
+      "input": 1,
+      "output": 5,
+      "cached_input": 0.1,
+      "cache_write": 1.25,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 2,
+          "output": 7.5,
+          "cached_input": 0.2,
+          "cache_write": 2.5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6-sol:batch": {
+      "input": 1,
+      "output": 5,
+      "cached_input": 0.1,
+      "cache_write": 1.25,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 2,
+          "output": 7.5,
+          "cached_input": 0.2,
+          "cache_write": 2.5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6.1-sol": {
+      "input": 2,
+      "output": 10,
+      "cached_input": 0.1,
+      "cache_write": 2.5,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 4,
+          "output": 15,
+          "cached_input": 0.2,
+          "cache_write": 5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6.1-sol-pro": {
+      "input": 2,
+      "output": 10,
+      "cached_input": 0.1,
+      "cache_write": 2.5,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 4,
+          "output": 15,
+          "cached_input": 0.2,
+          "cache_write": 5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6.1-sol-pro:batch": {
+      "input": 1,
+      "output": 5,
+      "cached_input": 0.05,
+      "cache_write": 1.25,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 2,
+          "output": 7.5,
+          "cached_input": 0.1,
+          "cache_write": 2.5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6.1-sol:batch": {
+      "input": 1,
+      "output": 5,
+      "cached_input": 0.05,
+      "cache_write": 1.25,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 2,
+          "output": 7.5,
+          "cached_input": 0.1,
+          "cache_write": 2.5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6.1-terra": {
+      "input": 1,
+      "output": 5,
+      "cached_input": 0.05,
+      "cache_write": 1.25,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 2,
+          "output": 7.5,
+          "cached_input": 0.1,
+          "cache_write": 2.5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6.1-terra-pro": {
+      "input": 1,
+      "output": 5,
+      "cached_input": 0.05,
+      "cache_write": 1.25,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 2,
+          "output": 7.5,
+          "cached_input": 0.1,
+          "cache_write": 2.5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6.1-terra-pro:batch": {
+      "input": 0.5,
+      "output": 2.5,
+      "cached_input": 0.025,
+      "cache_write": 0.625,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 1,
+          "output": 3.75,
+          "cached_input": 0.05,
+          "cache_write": 1.25
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6.1-terra:batch": {
+      "input": 0.5,
+      "output": 2.5,
+      "cached_input": 0.025,
+      "cache_write": 0.625,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 1,
+          "output": 3.75,
+          "cached_input": 0.05,
+          "cache_write": 1.25
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6.2-astra": {
+      "input": 8,
+      "output": 40,
+      "cached_input": 0.4,
+      "cache_write": 10,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 16,
+          "output": 60,
+          "cached_input": 0.8,
+          "cache_write": 20
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6.2-astra-pro": {
+      "input": 8,
+      "output": 40,
+      "cached_input": 0.4,
+      "cache_write": 10,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 16,
+          "output": 60,
+          "cached_input": 0.8,
+          "cache_write": 20
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6.2-astra-pro:batch": {
+      "input": 4,
+      "output": 20,
+      "cached_input": 0.2,
+      "cache_write": 5,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 8,
+          "output": 30,
+          "cached_input": 0.4,
+          "cache_write": 10
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6.2-astra:batch": {
+      "input": 4,
+      "output": 20,
+      "cached_input": 0.2,
+      "cache_write": 5,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 8,
+          "output": 30,
+          "cached_input": 0.4,
+          "cache_write": 10
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6.2-sol": {
+      "input": 2,
+      "output": 10,
+      "cached_input": 0.1,
+      "cache_write": 2.5,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 4,
+          "output": 15,
+          "cached_input": 0.2,
+          "cache_write": 5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6.2-sol-pro": {
+      "input": 2,
+      "output": 10,
+      "cached_input": 0.1,
+      "cache_write": 2.5,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 4,
+          "output": 15,
+          "cached_input": 0.2,
+          "cache_write": 5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6.2-sol-pro:batch": {
+      "input": 1,
+      "output": 5,
+      "cached_input": 0.05,
+      "cache_write": 1.25,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 2,
+          "output": 7.5,
+          "cached_input": 0.1,
+          "cache_write": 2.5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-6.2-sol:batch": {
+      "input": 1,
+      "output": 5,
+      "cached_input": 0.05,
+      "cache_write": 1.25,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 2,
+          "output": 7.5,
+          "cached_input": 0.1,
+          "cache_write": 2.5
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-audio": {
+      "input": 2.5,
+      "output": 10,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/openai/gpt-audio-mini": {
+      "input": 0.6,
+      "output": 2.4,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/openai/gpt-chat-latest": {
+      "input": 5,
+      "output": 30,
+      "cached_input": 0.5,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/gpt-oss-120b": {
+      "input": 0.09,
+      "output": 0.36,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/openai/gpt-oss-120b:batch": {
+      "input": 0.0296,
+      "output": 0.136,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/openai/gpt-oss-20b": {
+      "input": 0.017,
+      "output": 0.085,
+      "cached_input": 0.0085,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/openai/gpt-oss-20b:batch": {
+      "input": 0.024,
+      "output": 0.112,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/openai/gpt-oss-safeguard-20b": {
+      "input": 0.075,
+      "output": 0.3,
+      "cached_input": 0.0375,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/openai/o3": {
+      "input": 2,
+      "output": 8,
+      "cached_input": 0.5,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/o3-mini:batch": {
+      "input": 0.55,
+      "output": 2.2,
+      "cached_input": 0.275,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/o3-pro": {
+      "input": 20,
+      "output": 80,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/o3:batch": {
+      "input": 1,
+      "output": 4,
+      "cached_input": 0.25,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openai/o4-mini:batch": {
+      "input": 0.55,
+      "output": 2.2,
+      "cached_input": 0.1375,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/openrouter/free": {
+      "input": 0,
+      "output": 0,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/particle-ai/particle-1": {
+      "input": 0.07,
+      "output": 0.5,
+      "cached_input": 0.006,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/particle-ai/particle-1:free": {
+      "input": 0,
+      "output": 0,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/perceptron/perceptron-mk1": {
+      "input": 0.15,
+      "output": 1.5,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/perceptron/perceptron-mk1.5": {
+      "input": 0.15,
+      "output": 1.5,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/perplexity/sonar": {
+      "input": 1,
+      "output": 1,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/perplexity/sonar-deep-research": {
+      "input": 2,
+      "output": 8,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/perplexity/sonar-pro": {
+      "input": 3,
+      "output": 15,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/perplexity/sonar-pro-search": {
+      "input": 3,
+      "output": 15,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/perplexity/sonar-reasoning-pro": {
+      "input": 2,
+      "output": 8,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/prism-ml/ternary-bonsai-2-27b": {
+      "input": 0.075,
+      "output": 0.5,
+      "cached_input": 0.0375,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/prism-ml/ternary-bonsai-2-9b": {
+      "input": 0.08,
+      "output": 0.13,
+      "cached_input": 0.04,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen-2.5-72b-instruct": {
+      "input": 0.36,
+      "output": 0.4,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen-2.5-coder-32b-instruct": {
+      "input": 0.66,
+      "output": 1,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen-plus": {
+      "input": 0.26,
+      "output": 0.78,
+      "cached_input": 0.052,
+      "cache_write": 0.325,
+      "tiers": [
+        {
+          "above_prompt_tokens": 255999,
+          "input": 0.78,
+          "output": 2.34,
+          "cached_input": 0.156,
+          "cache_write": 0.975
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen2.5-vl-72b-instruct": {
+      "input": 0.8,
+      "output": 1,
+      "cached_input": 0.4,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3-14b": {
+      "input": 0.12,
+      "output": 0.24,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3-235b-a22b-2507": {
+      "input": 0.14,
+      "output": 0.8,
+      "cached_input": 0.05,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3-235b-a22b-thinking-2507": {
+      "input": 0.45,
+      "output": 3.5,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3-30b-a3b": {
+      "input": 0.12,
+      "output": 0.5,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3-30b-a3b-instruct-2507": {
+      "input": 0.1,
+      "output": 0.3,
+      "cached_input": 0.1,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3-32b": {
+      "input": 0.08,
+      "output": 0.28,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3-coder": {
+      "input": 0.3,
+      "output": 1,
+      "cached_input": 0.1,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3-coder-30b-a3b-instruct": {
+      "input": 0.07,
+      "output": 0.28,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3-coder-flash": {
+      "input": 0.195,
+      "output": 0.975,
+      "cached_input": 0.039,
+      "cache_write": 0.24375,
+      "tiers": [
+        {
+          "above_prompt_tokens": 31999,
+          "input": 0.325,
+          "output": 1.625,
+          "cached_input": 0.065,
+          "cache_write": 0.40625
+        },
+        {
+          "above_prompt_tokens": 127999,
+          "input": 0.52,
+          "output": 2.6,
+          "cached_input": 0.104,
+          "cache_write": 0.65
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3-coder-next": {
+      "input": 0.12,
+      "output": 0.8,
+      "cached_input": 0.07,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3-next-80b-a3b-instruct": {
+      "input": 0.1,
+      "output": 1.1,
+      "cached_input": 0.07,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3-vl-235b-a22b-instruct": {
+      "input": 0.21,
+      "output": 1.9,
+      "cached_input": 0.1,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3-vl-30b-a3b-instruct": {
+      "input": 0.15,
+      "output": 0.6,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3-vl-8b-instruct": {
+      "input": 0.25,
+      "output": 0.75,
+      "cached_input": 0.12,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3.5-122b-a10b": {
+      "input": 0.26,
+      "output": 2.08,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3.5-27b": {
+      "input": 0.195,
+      "output": 1.56,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3.5-35b-a3b": {
+      "input": 0.14,
+      "output": 1,
+      "cached_input": 0.05,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3.5-397b-a17b": {
+      "input": 0.45,
+      "output": 3,
+      "cached_input": 0.22,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3.5-9b": {
+      "input": 0.17,
+      "output": 0.25,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3.5-flash-02-23": {
+      "input": 0.065,
+      "output": 0.26,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3.5-plus-02-15": {
+      "input": 0.26,
+      "output": 1.56,
+      "tiers": [
+        {
+          "above_prompt_tokens": 255999,
+          "input": 0.325,
+          "output": 1.95
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3.5-plus-20260420": {
+      "input": 0.3,
+      "output": 1.8,
+      "cache_write": 0.375,
+      "tiers": [
+        {
+          "above_prompt_tokens": 255999,
+          "input": 0.375,
+          "output": 2.25,
+          "cache_write": 0.46875
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3.6-27b": {
+      "input": 0.32,
+      "output": 3.2,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3.6-35b-a3b": {
+      "input": 0.1,
+      "output": 0.9,
+      "cached_input": 0.025,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3.6-flash": {
+      "input": 0.1875,
+      "output": 1.125,
+      "cache_write": 0.234375,
+      "tiers": [
+        {
+          "above_prompt_tokens": 255999,
+          "input": 0.75,
+          "output": 3,
+          "cache_write": 0.9375
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3.6-plus": {
+      "input": 0.325,
+      "output": 1.95,
+      "cache_write": 0.40625,
+      "tiers": [
+        {
+          "above_prompt_tokens": 255999,
+          "input": 1.3,
+          "output": 3.9,
+          "cache_write": 1.625
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3.7-flash": {
+      "input": 0.03,
+      "output": 0.13,
+      "cached_input": 0.006,
+      "cache_write": 0.038,
+      "tiers": [
+        {
+          "above_prompt_tokens": 31999,
+          "input": 0.1,
+          "output": 0.4,
+          "cached_input": 0.02,
+          "cache_write": 0.125
+        },
+        {
+          "above_prompt_tokens": 255999,
+          "input": 0.2,
+          "output": 0.8,
+          "cached_input": 0.04,
+          "cache_write": 0.25
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3.7-max": {
+      "input": 1.475,
+      "output": 4.425,
+      "cached_input": 0.295,
+      "cache_write": 1.84375,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3.7-plus": {
+      "input": 0.32,
+      "output": 1.28,
+      "cached_input": 0.064,
+      "cache_write": 0.4,
+      "tiers": [
+        {
+          "above_prompt_tokens": 255999,
+          "input": 0.96,
+          "output": 3.84,
+          "cached_input": 0.192,
+          "cache_write": 1.2
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3.7-plus:batch": {
+      "input": 0.23,
+      "output": 0.92,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3.8-2.4t-a95b": {
+      "input": 2,
+      "output": 6,
+      "cached_input": 0.25,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3.8-27b": {
+      "input": 0.06,
+      "output": 1.96,
+      "cached_input": 0.059,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3.8-27b:batch": {
+      "input": 0.16,
+      "output": 2,
+      "cached_input": 0.04,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3.8-flash": {
+      "input": 0.15,
+      "output": 0.47,
+      "cached_input": 0.016,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3.8-max-0902": {
+      "input": 2,
+      "output": 6,
+      "cached_input": 0.25,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3.8-max-0902:batch": {
+      "input": 1.15,
+      "output": 3.45,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3.8-max-prime": {
+      "input": 4,
+      "output": 12,
+      "cached_input": 0.5,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen3.8-omni-flash": {
+      "input": 0.15,
+      "output": 0.47,
+      "cached_input": 0.016,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/qwen/qwen4-max": {
+      "input": 1.425,
+      "output": 4.275,
+      "cached_input": 0.07125,
+      "cache_write": 1.78125,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/radixark/daisyrose-27b": {
+      "input": 0.15,
+      "output": 1.875,
+      "cached_input": 0.0375,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/recursive/flint-v1.0:free": {
+      "input": 0,
+      "output": 0,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/reflection/beam-1.0-501b-a23b": {
+      "input": 0.25,
+      "output": 1,
+      "cached_input": 0.05,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/rekaai/reka-edge": {
+      "input": 0.1,
+      "output": 0.1,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/rekaai/reka-flash-3": {
+      "input": 0.1,
+      "output": 0.2,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/relace/relace-apply-3": {
+      "input": 0.85,
+      "output": 1.25,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/relace/relace-search": {
+      "input": 1,
+      "output": 3,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/ricursiveai/ripple-65b-preview": {
+      "input": 0.1,
+      "output": 0.3,
+      "cached_input": 0.025,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/sakana/fugu-max": {
+      "input": 2,
+      "output": 6,
+      "cached_input": 0.25,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/sakana/fugu-ultra": {
+      "input": 5,
+      "output": 30,
+      "cached_input": 0.5,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 10,
+          "output": 45,
+          "cached_input": 1
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/sakana/fugu-ultra-v2": {
+      "input": 5,
+      "output": 30,
+      "cached_input": 0.5,
+      "tiers": [
+        {
+          "above_prompt_tokens": 271999,
+          "input": 10,
+          "output": 45,
+          "cached_input": 1
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/sakana/sakana-namazu": {
+      "input": 0.95,
+      "output": 4,
+      "cached_input": 0.15,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/sao10k/l3-lunaris-8b": {
+      "input": 0.04,
+      "output": 0.05,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/sao10k/l3.1-euryale-70b": {
+      "input": 0.85,
+      "output": 0.85,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/scaledown/extract": {
+      "input": 0.04,
+      "output": 0,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/scaledown/summarize": {
+      "input": 0.04,
+      "output": 0,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/stepfun/step-3.7-flash": {
+      "input": 0.2,
+      "output": 1.15,
+      "cached_input": 0.04,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/stepfun/step-5-preview": {
+      "input": 1,
+      "output": 2.7,
+      "cached_input": 0.1,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/tencent/hy-mt2-1.8b": {
+      "input": 0.044,
+      "output": 0.177,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/tencent/hy-mt2-30b-a3b": {
+      "input": 0.074,
+      "output": 0.295,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/tencent/hy-mt2-7b": {
+      "input": 0.074,
+      "output": 0.295,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/tencent/hy3": {
+      "input": 0.132,
+      "output": 0.528,
+      "cached_input": 0.033,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Time-of-day rates vary; priced at the highest."
+    },
+    "openrouter/tencent/hy4": {
+      "input": 0.417,
+      "output": 1.2505,
+      "cached_input": 0.021,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/tencent/hy4-flash": {
+      "input": 0.035,
+      "output": 0.1405,
+      "cached_input": 0.0015,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/tencent/hy4-preview": {
+      "input": 0.834,
+      "output": 2.501,
+      "cached_input": 0.042,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Time-of-day rates vary; priced at the highest."
+    },
+    "openrouter/thedrummer/cydonia-24b-v4.1": {
+      "input": 0.3,
+      "output": 0.5,
+      "cached_input": 0.15,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/thedrummer/skyfall-36b-v2": {
+      "input": 0.55,
+      "output": 0.8,
+      "cached_input": 0.25,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/thedrummer/unslopnemo-12b": {
+      "input": 0.4,
+      "output": 0.4,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/thinkingmachines/inkling": {
+      "input": 1,
+      "output": 4.05,
+      "cached_input": 0.17,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/thinkingmachines/inkling-2-mini": {
+      "input": 0.075,
+      "output": 0.3,
+      "cached_input": 0.015,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/thinkingmachines/inkling-2-small": {
+      "input": 0.3,
+      "output": 1,
+      "cached_input": 0.03,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/thinkingmachines/inkling-small": {
+      "input": 0.45,
+      "output": 1.2,
+      "cached_input": 0.1,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/thinkingmachines/inkling-small:batch": {
+      "input": 0.36,
+      "output": 0.96,
+      "cached_input": 0.08,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/unbiased/pareto-26.10": {
+      "input": 0.8,
+      "output": 3.2,
+      "cached_input": 0.03,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/unbiased/pareto-26.10-preview": {
+      "input": 0.8,
+      "output": 3.2,
+      "cached_input": 0.03,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/unbiased/pareto-26.9": {
+      "input": 2.5,
+      "output": 7.5,
+      "cached_input": 0.25,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/undi95/remm-slerp-l2-13b": {
+      "input": 0.3,
+      "output": 0.5,
+      "cached_input": 0.2,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/upstage/solar-mini4": {
+      "input": 0.05,
+      "output": 0.2,
+      "cached_input": 0.005,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/upstage/solar-pro4": {
+      "input": 0.15,
+      "output": 0.6,
+      "cached_input": 0.03,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/writer/palmyra-x5": {
+      "input": 0.6,
+      "output": 6,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/x-ai/grok-4.20": {
+      "input": 1.25,
+      "output": 2.5,
+      "cached_input": 0.2,
+      "tiers": [
+        {
+          "above_prompt_tokens": 199999,
+          "input": 2.5,
+          "output": 5,
+          "cached_input": 0.4
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/x-ai/grok-4.20-multi-agent": {
+      "input": 1.25,
+      "output": 2.5,
+      "cached_input": 0.2,
+      "tiers": [
+        {
+          "above_prompt_tokens": 199999,
+          "input": 2.5,
+          "output": 5,
+          "cached_input": 0.4
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/x-ai/grok-4.3": {
+      "input": 1.25,
+      "output": 2.5,
+      "cached_input": 0.2,
+      "tiers": [
+        {
+          "above_prompt_tokens": 199999,
+          "input": 2.5,
+          "output": 5,
+          "cached_input": 0.4
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/x-ai/grok-4.3:batch": {
+      "input": 1,
+      "output": 2,
+      "cached_input": 0.16,
+      "tiers": [
+        {
+          "above_prompt_tokens": 199999,
+          "input": 2,
+          "output": 4,
+          "cached_input": 0.32
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/x-ai/grok-4.5": {
+      "input": 2,
+      "output": 6,
+      "cached_input": 0.3,
+      "tiers": [
+        {
+          "above_prompt_tokens": 199999,
+          "input": 4,
+          "output": 12,
+          "cached_input": 0.6
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/x-ai/grok-4.6": {
+      "input": 2,
+      "output": 6,
+      "cached_input": 0.5,
+      "tiers": [
+        {
+          "above_prompt_tokens": 199999,
+          "input": 4,
+          "output": 12,
+          "cached_input": 1
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/x-ai/grok-4.6:batch": {
+      "input": 1.6,
+      "output": 4.8,
+      "cached_input": 0.4,
+      "tiers": [
+        {
+          "above_prompt_tokens": 199999,
+          "input": 3.2,
+          "output": 9.6,
+          "cached_input": 0.8
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/x-ai/grok-4.7": {
+      "input": 2,
+      "output": 6,
+      "cached_input": 0.5,
+      "tiers": [
+        {
+          "above_prompt_tokens": 199999,
+          "input": 4,
+          "output": 12,
+          "cached_input": 1
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/x-ai/grok-4.7:batch": {
+      "input": 1.6,
+      "output": 4.8,
+      "cached_input": 0.4,
+      "tiers": [
+        {
+          "above_prompt_tokens": 199999,
+          "input": 3.2,
+          "output": 9.6,
+          "cached_input": 0.8
+        }
+      ],
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21",
+      "note": "Per-request and web search fees are not included."
+    },
+    "openrouter/xiaomi/mimo-v2.5": {
+      "input": 0.4,
+      "output": 2,
+      "cached_input": 0.08,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/xiaomi/mimo-v2.5-pro": {
+      "input": 0.48,
+      "output": 1.8,
+      "cached_input": 0.096,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/xiaomi/mimo-v2.6-flash": {
+      "input": 0.14,
+      "output": 0.28,
+      "cached_input": 0.0028,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/xiaomi/mimo-v2.6-pro": {
+      "input": 0.435,
+      "output": 0.87,
+      "cached_input": 0.0036,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/xiaomi/mimo-v2.6-pro-ultraspeed": {
+      "input": 4.35,
+      "output": 8.7,
+      "cached_input": 0.036,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/z-ai/glm-4.5": {
+      "input": 0.6,
+      "output": 2.2,
+      "cached_input": 0.11,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/z-ai/glm-4.5-air": {
+      "input": 0.13,
+      "output": 0.85,
+      "cached_input": 0.025,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/z-ai/glm-4.5v": {
+      "input": 0.6,
+      "output": 1.8,
+      "cached_input": 0.11,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/z-ai/glm-4.6": {
+      "input": 0.5,
+      "output": 2,
+      "cached_input": 0.1,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/z-ai/glm-4.6v": {
+      "input": 0.3,
+      "output": 0.9,
+      "cached_input": 0.055,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/z-ai/glm-4.7": {
+      "input": 0.4,
+      "output": 1.75,
+      "cached_input": 0.08,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/z-ai/glm-4.7-flash": {
+      "input": 0.0605,
+      "output": 0.4,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/z-ai/glm-5": {
+      "input": 1,
+      "output": 3.2,
+      "cached_input": 0.2,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/z-ai/glm-5-turbo": {
+      "input": 1.2,
+      "output": 4,
+      "cached_input": 0.24,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/z-ai/glm-5.1": {
+      "input": 1.4,
+      "output": 4.4,
+      "cached_input": 0.26,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/z-ai/glm-5.2": {
+      "input": 0.62,
+      "output": 2.42,
+      "cached_input": 0.14,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/z-ai/glm-5.2:batch": {
+      "input": 0.322,
+      "output": 0.989,
+      "cached_input": 0.109,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/z-ai/glm-5.3": {
+      "input": 0.0699,
+      "output": 1.4,
+      "cached_input": 0.0689,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/z-ai/glm-5.3-flash": {
+      "input": 0.0399,
+      "output": 0.0784,
+      "cached_input": 0.03,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/z-ai/glm-5.3-flash:batch": {
+      "input": 0.023,
+      "output": 0.068,
+      "cached_input": 0.009,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/z-ai/glm-5.3-flashx": {
+      "input": 0.37,
+      "output": 1.25,
+      "cached_input": 0.075,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/z-ai/glm-5.3-flashx-legal": {
+      "input": 0.37,
+      "output": 1.25,
+      "cached_input": 0.075,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/z-ai/glm-5.3-prime": {
+      "input": 1.68,
+      "output": 5.28,
+      "cached_input": 0.336,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/z-ai/glm-5.3:batch": {
+      "input": 0.28,
+      "output": 1.249,
+      "cached_input": 0.061,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
+    },
+    "openrouter/z-ai/glm-5v-turbo": {
+      "input": 1.2,
+      "output": 4,
+      "cached_input": 0.24,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-21"
     }
   }
 }

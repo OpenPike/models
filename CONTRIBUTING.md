@@ -8,7 +8,7 @@ This repo is published from OpenPike's main repository. When your pull request i
 
 ## Changing or adding a price
 
-1. **Link the provider's own pricing page** in the pull request, and use it as `source`. Prices from resellers, aggregators, blog posts or screenshots are not accepted.
+1. **Link the provider's own pricing page** in the pull request, and use it as `source`. Prices from resellers, aggregators, blog posts or screenshots are not accepted. Price data the provider publishes itself counts as its own page (for example Nebius's `models_info`). For the `openrouter` provider, OpenRouter is the seller, so its own models API is the source.
 2. **Set `as_of`** to the day you read the page (`YYYY-MM-DD`).
 3. **Keep dates; never delete a price that was in force.** When a provider changes a price, add a dated entry to the model's `changes` list (`from` is the first day the new price applies, oldest first) instead of overwriting the old numbers, so requests made before the change keep their price. Overwrite the base rates only to fix a mistake.
 4. **One provider per pull request.** Several models from the same provider are fine.
