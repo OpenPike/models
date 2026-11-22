@@ -13,7 +13,8 @@ This repo is published from OpenPike's main repository. When your pull request i
 3. **Keep dates; never delete a price that was in force.** When a provider changes a price, add a dated entry to the model's `changes` list (`from` is the first day the new price applies, oldest first) instead of overwriting the old numbers, so requests made before the change keep their price. Overwrite the base rates only to fix a mistake.
 4. **One provider per pull request.** Several models from the same provider are fine.
 5. Model names (the keys in `prices.json`) are `<provider slug>/<model id>`, with the model id exactly as the provider's API takes it.
-6. Rates are US dollars per 1 million tokens. Leave out `cached_input`, `cache_write` or `cache_write_1h` when the provider does not offer that price (the input price is used).
+6. Service tiers (`service_tiers`) are read from the provider's own pricing page too: a `multiplier` when one factor applies to every rate, or a full rate set when the page lists them per tier. Use the tier name the provider's response reports.
+7. Rates are US dollars per 1 million tokens. Leave out `cached_input`, `cache_write` or `cache_write_1h` when the provider does not offer that price (the input price is used).
 
 ## Adding or confirming a provider
 

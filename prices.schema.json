@@ -42,6 +42,26 @@
         "cache_write_1h": { "$ref": "#/$defs/cache_write_1h" }
       }
     },
+    "serviceTier": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "What a service tier (priority, flex) changes. Give either a multiplier (applied to every rate in force, prompt-length tiers included) or a full rate set (input and output required) where the provider publishes per-tier prices, not both.",
+      "properties": {
+        "multiplier": { "type": "number", "exclusiveMinimum": 0, "description": "Times every rate of the model (input, output, cached input, cache writes)." },
+        "input": { "$ref": "#/$defs/input" },
+        "output": { "$ref": "#/$defs/output" },
+        "cached_input": { "$ref": "#/$defs/cached_input" },
+        "cache_write": { "$ref": "#/$defs/cache_write" },
+        "cache_write_1h": { "$ref": "#/$defs/cache_write_1h" }
+      }
+    },
+    "serviceTiers": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": { "type": "string", "pattern": "^[a-z][a-z0-9_-]*$", "description": "The tier name the provider's response reports, lowercase (for example priority or flex)." },
+      "additionalProperties": { "$ref": "#/$defs/serviceTier" },
+      "description": "Rates for service tiers the provider bills differently from standard. The tier is read from the response, because a provider can downgrade a request. A response that reports a tier listed neither here nor among the standard names (default, auto, standard) is costed at the standard rate and marked estimated."
+    },
     "tiers": {
       "type": "array",
       "minItems": 1,
@@ -78,6 +98,7 @@
         "cache_write": { "$ref": "#/$defs/cache_write" },
         "cache_write_1h": { "$ref": "#/$defs/cache_write_1h" },
         "tiers": { "$ref": "#/$defs/tiers" },
+        "service_tiers": { "$ref": "#/$defs/serviceTiers" },
         "changes": {
           "type": "array",
           "minItems": 1,

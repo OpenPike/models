@@ -63,6 +63,13 @@ export function checkPrices(prices, schema, catalog, today = new Date().toISOStr
     if (!slugs.has(slug)) errors.push(`${path}: provider "${slug}" is not in catalog.json`);
     if (price.as_of > latest) errors.push(`${path}: as_of ${price.as_of} is in the future`);
     checkTiers(price.tiers, `${path}.tiers`, errors);
+    for (const [name, tier] of Object.entries(price.service_tiers ?? {})) {
+      const full = tier.input !== undefined || tier.output !== undefined;
+      if (tier.multiplier !== undefined && full) errors.push(`${path}.service_tiers.${name}: give a multiplier or a rate set, not both`);
+      else if (tier.multiplier === undefined && (tier.input === undefined || tier.output === undefined)) {
+        errors.push(`${path}.service_tiers.${name}: needs a multiplier, or both input and output`);
+      }
+    }
 
     let previous = null;
     (price.changes ?? []).forEach((change, i) => {
