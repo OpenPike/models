@@ -6736,6 +6736,34 @@
       "cached_input": 0.24,
       "source": "https://openrouter.ai/api/v1/models",
       "as_of": "2026-11-21"
+    },
+    "typesafe/jev-1.14.0": {
+      "input": 0.042,
+      "output": 0,
+      "note": "Output tokens are free; long context costs the same.",
+      "source": "https://docs.typesafe.ai/models",
+      "as_of": "2026-11-21"
+    },
+    "typesafe/jev-1.13.0": {
+      "input": 0.042,
+      "output": 0,
+      "note": "Output tokens are free; long context costs the same.",
+      "source": "https://docs.typesafe.ai/models",
+      "as_of": "2026-11-21"
+    },
+    "typesafe/jev-latest": {
+      "input": 0.042,
+      "output": 0,
+      "note": "Alias: points to jev-1.14.0 as of 2026-11-21. Output tokens are free; long context costs the same.",
+      "source": "https://docs.typesafe.ai/models",
+      "as_of": "2026-11-21"
+    },
+    "typesafe/jev-preview": {
+      "input": 0.042,
+      "output": 0,
+      "note": "Alias: points to jev-1.14.0 as of 2026-11-21. Output tokens are free; long context costs the same.",
+      "source": "https://docs.typesafe.ai/models",
+      "as_of": "2026-11-21"
     }
   }
 }
