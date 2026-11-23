@@ -219,9 +219,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://api.ai21.com/studio/v1",
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://docs.ai21.com/reference/jamba-1-6-api-ref (read 2026-11-22). Available: switched on from those docs and a keyless check (a 400 whose error says authentication is missing), not tested live by OpenPike yet."
     },
     {
       "slug": "aion-labs",
