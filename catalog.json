@@ -246,10 +246,9 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": "https://api.ai21.com/studio/v1",
-      "verify": false,
-      "enabled": true,
-      "notes": "Base URL from the provider's API docs: https://docs.ai21.com/reference/jamba-1-6-api-ref (read 2026-11-22). Available: switched on from those docs and a keyless check (400 bad or missing authentication), not tested live by OpenPike yet."
+      "baseUrl": null,
+      "verify": true,
+      "enabled": false
     },
     {
       "slug": "alibaba",

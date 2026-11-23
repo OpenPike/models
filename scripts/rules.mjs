@@ -5,6 +5,16 @@
 import { isDate, validateSchema } from "./schema.mjs";
 
 const ROUTING_FIELDS = ["adapter", "baseUrl", "formats", "auth"];
+const ADDRESS_FIELDS = ["baseUrl", "messagesBaseUrl"];
+
+/** The last two labels of a URL's host ("docs.ai21.com" gives "ai21.com"), or null if it does not parse. */
+function siteOf(url) {
+  try {
+    return new URL(url).hostname.split(".").slice(-2).join(".");
+  } catch {
+    return null;
+  }
+}
 
 /** Errors in the catalog, as "path: message" strings. Empty when valid. */
 export function checkCatalog(catalog, schema) {
@@ -12,10 +22,41 @@ export function checkCatalog(catalog, schema) {
   if (errors.length) return errors;
 
   const seen = new Map();
+  // Two providers on one address would send one provider's customer keys to the other.
+  const addresses = new Map();
+  // Which providers each site serves, from their addresses. Used to catch an entry copied from
+  // another provider: its notes would cite that provider's docs even if the address was changed.
+  const owners = new Map();
+  for (const p of catalog.providers) {
+    for (const field of ADDRESS_FIELDS) {
+      const site = p[field] == null ? null : siteOf(p[field]);
+      if (site === null) continue;
+      if (!owners.has(site)) owners.set(site, new Set());
+      owners.get(site).add(p.slug);
+    }
+  }
   catalog.providers.forEach((p, i) => {
     const path = `catalog.providers[${i}] (${p.slug})`;
     if (seen.has(p.slug)) errors.push(`${path}: duplicate slug, also at providers[${seen.get(p.slug)}]`);
     else seen.set(p.slug, i);
+    for (const field of ADDRESS_FIELDS) {
+      const url = p[field];
+      if (url == null) continue;
+      const other = addresses.get(url);
+      if (other) errors.push(`${path}: ${field} ${url} is already used by ${other}`);
+      else addresses.set(url, `${p.slug} (${field})`);
+    }
+    if (p.enabled && typeof p.notes === "string") {
+      for (const url of p.notes.match(/https?:\/\/[^\s)"',]+/g) ?? []) {
+        const site = siteOf(url);
+        // Any other provider on that site counts, even if this one's address is there too: a copied
+        // entry usually carries the copied address as well.
+        const others = [...((site !== null && owners.get(site)) || [])].filter((slug) => slug !== p.slug);
+        if (others.length) {
+          errors.push(`${path}: notes cite ${url}, which is ${others.join(", ")}'s site, not this provider's`);
+        }
+      }
+    }
 
     // An enabled, verified provider receives traffic, so it needs everything an adapter uses.
     if (p.enabled && p.verify !== true) {
