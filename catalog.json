@@ -285,9 +285,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://api.arcee.ai/api/v1",
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://docs.arcee.ai/api-reference/your-first-api-call (read 2026-11-22). Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "atlas-cloud",
@@ -298,9 +299,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://api.atlascloud.ai/v1",
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://atlascloud.ai/docs/en/llm-protocols (read 2026-11-22). Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "avian",
@@ -311,9 +313,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://api.avian.io/v1",
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://docs.avian.io/api/completions (read 2026-11-22). Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "baidu",
@@ -430,9 +433,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://inference.do-ai.run/v1",
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://docs.digitalocean.com/products/inference/reference/api/serverless-inference/ (read 2026-11-22). Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "featherless",
@@ -524,9 +528,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://api.intelligence.io.solutions/api/v1",
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://io.net/docs/reference/ai-models/get-started-with-io-intelligence-api (read 2026-11-22). Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "ionstream",
@@ -644,9 +649,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://api.morphllm.com/v1",
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://docs.morphllm.com/auth (read 2026-11-22). Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "near-ai",
@@ -657,9 +663,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://cloud-api.near.ai/v1",
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://docs.near.ai/cloud/quickstart (read 2026-11-22). Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "nebius",
@@ -739,9 +746,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://inference.phala.com/v1",
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://docs.phala.com/phala-cloud/confidential-ai/confidential-model/confidential-ai-api (read 2026-11-22). Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "poolside",
@@ -765,9 +773,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://api.pinference.ai/api/v1",
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://docs.primeintellect.ai/inference/overview (read 2026-11-22). Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "reka",
@@ -805,9 +814,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://api.sakana.ai/v1",
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://console.sakana.ai/get-started (read 2026-11-22). Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "sambanova",
@@ -886,9 +896,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://api.hunyuan.cloud.tencent.com/v1",
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://cloud.tencent.com/document/product/1729/111007 (read 2026-11-22). Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "thinkingmachines",
@@ -952,9 +963,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://api.xiaomimimo.com/v1",
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://mimo.mi.com/docs/en-US/quick-start/summary/first-api-call (read 2026-11-22). Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "z-ai",
