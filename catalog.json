@@ -245,9 +245,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://api.ai21.com/studio/v1",
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://docs.ai21.com/reference/jamba-1-6-api-ref (read 2026-11-22). Available: switched on from those docs and a keyless check (400 bad or missing authentication), not tested live by OpenPike yet."
     },
     {
       "slug": "alibaba",
@@ -388,9 +389,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://api.cohere.ai/compatibility/v1",
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://docs.cohere.com/docs/compatibility-api (read 2026-11-22). Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "coreweave",
@@ -570,9 +572,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://api.meta.ai/v1",
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://dev.meta.ai/docs/protocols/chat-completions (read 2026-11-22). Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "minimax",
@@ -583,9 +586,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://api.minimax.io/v1",
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://platform.minimax.io/docs/api-reference/text-openai-api (read 2026-11-22). Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "modal",
@@ -703,9 +707,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://docs.api.nvidia.com/nim/reference/llm-apis (read 2026-11-22). Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "parasail",
@@ -768,9 +773,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://api.reka.ai/v1",
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://docs.reka.ai/quickstart (read 2026-11-22). Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "relace",
@@ -900,9 +906,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://api.upstage.ai/v1",
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://console.upstage.ai/docs/capabilities/generate/chat (read 2026-11-22). Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "venice",

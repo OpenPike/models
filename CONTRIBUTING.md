@@ -22,12 +22,12 @@ Start from the [tracking issue](https://github.com/OpenPike/models/issues/1), wh
 
 A new provider goes into `catalog.json` with `"enabled": false` and `"verify": true`, and a `baseUrl` from the provider's own API documentation (or `null` if you cannot find one). We never guess an address.
 
-**What switches a provider on.** You do not need OpenPike to hold a key for it. We switch it on as **Available** with:
+**What switches a provider on.** You do not need OpenPike to hold a key for it, and you do not need a key yourself. We switch it on as **Available** with a link to the provider's own API docs showing the base URL, plus either:
 
-- a link to the provider's own API docs showing the base URL, and
+- a keyless check: `POST <baseUrl>/chat/completions` with no key answers 401 or 403 (any body), or a 400 whose error says authentication or the API key is missing, or
 - a redacted `curl` response from `POST <baseUrl>/chat/completions` with a 200 and a `usage` block. **Never paste a key**; replace it with `REDACTED`.
 
-Before porting, we also check that the address answers a request without a key with 401 or 403 (not 404 or a DNS error). Then the entry gets `"enabled": true` and `"verify": false`. **Tested** on the docs Providers page is reserved for providers that passed OpenPike's own live test, recorded in `liveTested`; leave that field alone.
+Before porting, we run the keyless check ourselves either way. A 404, a redirect, an HTML page, a 200 or a DNS error does not pass. Then the entry gets `"enabled": true` and `"verify": false`. **Tested** on the docs Providers page is reserved for providers that passed OpenPike's own live test, recorded in `liveTested`; leave that field alone.
 
 If the address has something per customer in it (an account ID, a project, a region you pick), say so: that needs a code change rather than a catalog edit.
 
