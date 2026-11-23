@@ -1,0 +1,51 @@
+name: Provider not working
+description: A provider fails, errors or returns something wrong through OpenPike.
+title: "Provider not working: "
+labels: ["provider-problem"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting it. This is the fastest way for us to find a provider that does not work: most providers are enabled as Available (from the provider's docs, not yet tested live by OpenPike).
+
+        **Never paste an API key**, not even an expired one, and no prompt or response text. The status code and error code from OpenPike's response are enough.
+  - type: input
+    id: provider
+    attributes:
+      label: Provider slug
+      description: The `slug` of the provider, for example `cohere`.
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model
+      description: The model name you sent, for example `cohere/command-r-plus`.
+    validations:
+      required: true
+  - type: dropdown
+    id: endpoint
+    attributes:
+      label: Endpoint
+      options:
+        - chat
+        - messages
+        - responses
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: The HTTP status and the error code from OpenPike's response (the `code` in the error body), and what you expected. No keys, no prompt text.
+      placeholder: "Status 502, error code upstream_error. I expected a normal reply."
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Date and time (UTC)
+      description: When it happened, as shown in Logs.
+      placeholder: "2026-11-23 14:05"
+    validations:
+      required: true
