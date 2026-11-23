@@ -2893,21 +2893,45 @@
       "output": 0.5,
       "cached_input": 0.01,
       "source": "https://openrouter.ai/api/v1/models",
-      "as_of": "2026-11-21"
+      "as_of": "2026-11-21",
+      "changes": [
+        {
+          "from": "2026-11-23",
+          "input": 0.03,
+          "output": 0.2,
+          "cached_input": 0.001
+        }
+      ]
     },
     "openrouter/~deepseek/deepseek-pro-latest": {
       "input": 0.0999,
       "output": 8,
       "cached_input": 0.0999,
       "source": "https://openrouter.ai/api/v1/models",
-      "as_of": "2026-11-21"
+      "as_of": "2026-11-21",
+      "changes": [
+        {
+          "from": "2026-11-23",
+          "input": 0.0999,
+          "output": 5,
+          "cached_input": 0.0999
+        }
+      ]
     },
     "openrouter/~deepseek/deepseek-v4-flash-latest": {
       "input": 0.044,
       "output": 0.132,
       "cached_input": 0.0014,
       "source": "https://openrouter.ai/api/v1/models",
-      "as_of": "2026-11-21"
+      "as_of": "2026-11-21",
+      "changes": [
+        {
+          "from": "2026-11-23",
+          "input": 0.0434,
+          "output": 0.3,
+          "cached_input": 0.035
+        }
+      ]
     },
     "openrouter/~google/gemini-flash-latest": {
       "input": 1.5,
@@ -3044,7 +3068,15 @@
       "output": 0.0784,
       "cached_input": 0.03,
       "source": "https://openrouter.ai/api/v1/models",
-      "as_of": "2026-11-21"
+      "as_of": "2026-11-21",
+      "changes": [
+        {
+          "from": "2026-11-23",
+          "input": 0.0399,
+          "output": 0.074,
+          "cached_input": 0.03
+        }
+      ]
     },
     "openrouter/~z-ai/glm-latest": {
       "input": 0.0699,
@@ -3637,7 +3669,15 @@
       "output": 0.3,
       "cached_input": 0.035,
       "source": "https://openrouter.ai/api/v1/models",
-      "as_of": "2026-11-21"
+      "as_of": "2026-11-21",
+      "changes": [
+        {
+          "from": "2026-11-23",
+          "input": 0.0434,
+          "output": 0.3,
+          "cached_input": 0.035
+        }
+      ]
     },
     "openrouter/deepseek/deepseek-v4-flash-0731:batch": {
       "input": 0.048,
@@ -3680,7 +3720,15 @@
       "cached_input": 0.006,
       "source": "https://openrouter.ai/api/v1/models",
       "as_of": "2026-11-21",
-      "note": "Time-of-day rates vary; priced at the highest."
+      "note": "Time-of-day rates vary; priced at the highest.",
+      "changes": [
+        {
+          "from": "2026-11-23",
+          "input": 0.03,
+          "output": 0.2,
+          "cached_input": 0.001
+        }
+      ]
     },
     "openrouter/deepseek/deepseek-v4.1-flash-1017:batch": {
       "input": 0.035,
@@ -4102,20 +4150,43 @@
       "output": 0.45,
       "cached_input": 0.04,
       "source": "https://openrouter.ai/api/v1/models",
-      "as_of": "2026-11-21"
+      "as_of": "2026-11-21",
+      "changes": [
+        {
+          "from": "2026-11-23",
+          "input": 0.08,
+          "output": 0.16
+        }
+      ]
     },
     "openrouter/google/gemma-3-4b-it": {
       "input": 0.05,
       "output": 0.1,
       "source": "https://openrouter.ai/api/v1/models",
-      "as_of": "2026-11-21"
+      "as_of": "2026-11-21",
+      "changes": [
+        {
+          "from": "2026-11-23",
+          "input": 0.04,
+          "output": 0.05,
+          "cached_input": 0.02
+        }
+      ]
     },
     "openrouter/google/gemma-4-26b-a4b-it": {
       "input": 0.0675,
       "output": 0.225,
       "cached_input": 0.0375,
       "source": "https://openrouter.ai/api/v1/models",
-      "as_of": "2026-11-21"
+      "as_of": "2026-11-21",
+      "changes": [
+        {
+          "from": "2026-11-23",
+          "input": 0.09,
+          "output": 0.3,
+          "cached_input": 0.05
+        }
+      ]
     },
     "openrouter/google/gemma-4-26b-a4b-it:free": {
       "input": 0,
@@ -4151,7 +4222,15 @@
       "input": 0.08,
       "output": 0.11,
       "source": "https://openrouter.ai/api/v1/models",
-      "as_of": "2026-11-21"
+      "as_of": "2026-11-21",
+      "changes": [
+        {
+          "from": "2026-11-23",
+          "input": 0.3,
+          "output": 0.5,
+          "cached_input": 0.2
+        }
+      ]
     },
     "openrouter/ibm-granite/granite-4.2-8b": {
       "input": 0.06,
@@ -4623,7 +4702,15 @@
       "output": 8.8,
       "cached_input": 0.18,
       "source": "https://openrouter.ai/api/v1/models",
-      "as_of": "2026-11-21"
+      "as_of": "2026-11-21",
+      "changes": [
+        {
+          "from": "2026-11-23",
+          "input": 0.2403,
+          "output": 8.4023,
+          "cached_input": 0.2
+        }
+      ]
     },
     "openrouter/moonshotai/kimi-k3.1-pro:batch": {
       "input": 0.372,
@@ -5953,7 +6040,15 @@
       "input": 0.09,
       "output": 0.36,
       "source": "https://openrouter.ai/api/v1/models",
-      "as_of": "2026-11-21"
+      "as_of": "2026-11-21",
+      "changes": [
+        {
+          "from": "2026-11-23",
+          "input": 0.05,
+          "output": 0.25,
+          "cached_input": 0.05
+        }
+      ]
     },
     "openrouter/openai/gpt-oss-120b:batch": {
       "input": 0.0296,
@@ -5966,7 +6061,15 @@
       "output": 0.085,
       "cached_input": 0.0085,
       "source": "https://openrouter.ai/api/v1/models",
-      "as_of": "2026-11-21"
+      "as_of": "2026-11-21",
+      "changes": [
+        {
+          "from": "2026-11-23",
+          "input": 0.03,
+          "output": 0.13,
+          "cached_input": 0.03
+        }
+      ]
     },
     "openrouter/openai/gpt-oss-20b:batch": {
       "input": 0.024,
@@ -6031,7 +6134,15 @@
       "output": 0.5,
       "cached_input": 0.006,
       "source": "https://openrouter.ai/api/v1/models",
-      "as_of": "2026-11-21"
+      "as_of": "2026-11-21",
+      "changes": [
+        {
+          "from": "2026-11-23",
+          "input": 0.07,
+          "output": 0.5,
+          "cached_input": 0.03
+        }
+      ]
     },
     "openrouter/particle-ai/particle-1:free": {
       "input": 0,
@@ -6255,7 +6366,14 @@
       "input": 0.195,
       "output": 1.56,
       "source": "https://openrouter.ai/api/v1/models",
-      "as_of": "2026-11-21"
+      "as_of": "2026-11-21",
+      "changes": [
+        {
+          "from": "2026-11-23",
+          "input": 0.26,
+          "output": 2.6
+        }
+      ]
     },
     "openrouter/qwen/qwen3.5-35b-a3b": {
       "input": 0.14,
@@ -6322,7 +6440,15 @@
       "output": 0.9,
       "cached_input": 0.025,
       "source": "https://openrouter.ai/api/v1/models",
-      "as_of": "2026-11-21"
+      "as_of": "2026-11-21",
+      "changes": [
+        {
+          "from": "2026-11-23",
+          "input": 0.05,
+          "output": 0.7,
+          "cached_input": 0.025
+        }
+      ]
     },
     "openrouter/qwen/qwen3.6-flash": {
       "input": 0.1875,
@@ -6421,7 +6547,15 @@
       "output": 1.96,
       "cached_input": 0.059,
       "source": "https://openrouter.ai/api/v1/models",
-      "as_of": "2026-11-21"
+      "as_of": "2026-11-21",
+      "changes": [
+        {
+          "from": "2026-11-23",
+          "input": 0.035,
+          "output": 1.5,
+          "cached_input": 0.0175
+        }
+      ]
     },
     "openrouter/qwen/qwen3.8-27b:batch": {
       "input": 0.16,
@@ -6633,7 +6767,15 @@
       "cached_input": 0.033,
       "source": "https://openrouter.ai/api/v1/models",
       "as_of": "2026-11-21",
-      "note": "Time-of-day rates vary; priced at the highest."
+      "note": "Time-of-day rates vary; priced at the highest.",
+      "changes": [
+        {
+          "from": "2026-11-23",
+          "input": 0.14,
+          "output": 0.58,
+          "cached_input": 0.035
+        }
+      ]
     },
     "openrouter/tencent/hy4": {
       "input": 0.417,
@@ -6979,7 +7121,15 @@
       "output": 1.75,
       "cached_input": 0.08,
       "source": "https://openrouter.ai/api/v1/models",
-      "as_of": "2026-11-21"
+      "as_of": "2026-11-21",
+      "changes": [
+        {
+          "from": "2026-11-23",
+          "input": 0.6,
+          "output": 2.2,
+          "cached_input": 0.11
+        }
+      ]
     },
     "openrouter/z-ai/glm-4.7-flash": {
       "input": 0.0605,
@@ -7034,7 +7184,15 @@
       "output": 0.0784,
       "cached_input": 0.03,
       "source": "https://openrouter.ai/api/v1/models",
-      "as_of": "2026-11-21"
+      "as_of": "2026-11-21",
+      "changes": [
+        {
+          "from": "2026-11-23",
+          "input": 0.0399,
+          "output": 0.074,
+          "cached_input": 0.03
+        }
+      ]
     },
     "openrouter/z-ai/glm-5.3-flash:batch": {
       "input": 0.023,
@@ -7077,6 +7235,12 @@
       "cached_input": 0.24,
       "source": "https://openrouter.ai/api/v1/models",
       "as_of": "2026-11-21"
+    },
+    "openrouter/dots-studio/dots-3-note-preview:free": {
+      "input": 0,
+      "output": 0,
+      "source": "https://openrouter.ai/api/v1/models",
+      "as_of": "2026-11-23"
     },
     "typesafe/jev-1.14.0": {
       "input": 0.042,
