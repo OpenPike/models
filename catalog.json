@@ -337,9 +337,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://inference.baseten.co/v1",
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://docs.baseten.co/inference/model-apis/overview (read 2026-11-22). Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "chutes",
@@ -442,9 +443,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://api.featherless.ai/v1",
+      "verify": false,
+      "enabled": false,
+      "notes": "Base URL from the provider's API docs: https://featherless.ai/docs/api-overview-and-common-options (read 2026-11-22). Left disabled: Featherless is subscription priced, and per-token estimates would count spend toward budgets that the user never actually pays. It stays off until providers can be marked subscription priced."
     },
     {
       "slug": "friendli",
@@ -455,9 +457,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://api.friendli.ai/serverless/v1",
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://friendli.ai/docs/openapi/serverless/chat-completions (read 2026-11-22). Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "gmicloud",
@@ -481,9 +484,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://api.inceptionlabs.ai/v1",
+      "verify": false,
+      "enabled": false,
+      "notes": "Base URL from the provider's API docs: https://docs.inceptionlabs.ai/get-started/get-started (read 2026-11-22). Left disabled: Inception's docs say the Mercury API winds down after 2026-12-28, so it stays off."
     },
     {
       "slug": "inference-net",
@@ -721,9 +725,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://api.parasail.io/v1",
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://docs.parasail.io/parasail-docs/api-reference/authentication (read 2026-11-22). Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "phala",
@@ -854,9 +859,10 @@
         "chat"
       ],
       "auth": "bearer",
-      "baseUrl": null,
-      "verify": true,
-      "enabled": false
+      "baseUrl": "https://api.stepfun.ai/v1",
+      "verify": false,
+      "enabled": true,
+      "notes": "Base URL from the provider's API docs: https://platform.stepfun.ai/docs/en/api-reference/chat/chat-completion-create (read 2026-11-22). Available: switched on from those docs and a keyless check (401 or 403), not tested live by OpenPike yet."
     },
     {
       "slug": "streamlake",

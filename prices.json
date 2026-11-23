@@ -7221,6 +7221,103 @@
       "note": "Alias for jamba-mini-2-2026-01. The pricing page gives the Jamba Mini price without a version.",
       "source": "https://www.ai21.com/pricing",
       "as_of": "2026-11-22"
+    },
+    "baseten/zai-org/GLM-5.3": {
+      "input": 1.4,
+      "output": 4.4,
+      "cached_input": 0.14,
+      "source": "https://www.baseten.co/pricing/",
+      "as_of": "2026-11-22"
+    },
+    "baseten/zai-org/GLM-5.2": {
+      "input": 1.4,
+      "output": 4.4,
+      "cached_input": 0.14,
+      "source": "https://www.baseten.co/pricing/",
+      "as_of": "2026-11-22"
+    },
+    "baseten/deepseek-ai/DeepSeek-V4.1-Flash": {
+      "input": 0.3,
+      "output": 1.2,
+      "cached_input": 0.007,
+      "source": "https://www.baseten.co/pricing/",
+      "as_of": "2026-11-22"
+    },
+    "baseten/deepseek-ai/DeepSeek-V4-Pro-0813": {
+      "input": 1.32,
+      "output": 3.96,
+      "cached_input": 0.132,
+      "source": "https://www.baseten.co/pricing/",
+      "as_of": "2026-11-22"
+    },
+    "baseten/moonshotai/Kimi-K3": {
+      "input": 3,
+      "output": 15,
+      "cached_input": 0.3,
+      "source": "https://www.baseten.co/pricing/",
+      "as_of": "2026-11-22"
+    },
+    "baseten/moonshotai/Kimi-K3.1-Pro": {
+      "input": 2,
+      "output": 10,
+      "cached_input": 0.2,
+      "source": "https://www.baseten.co/pricing/",
+      "as_of": "2026-11-22"
+    },
+    "baseten/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B": {
+      "input": 0.6,
+      "output": 2.4,
+      "cached_input": 0.12,
+      "source": "https://www.baseten.co/pricing/",
+      "as_of": "2026-11-22"
+    },
+    "baseten/meta-models/muse-spark-open": {
+      "input": 1.25,
+      "output": 4.25,
+      "cached_input": 0.15,
+      "source": "https://www.baseten.co/pricing/",
+      "as_of": "2026-11-22"
+    },
+    "baseten/openai/gpt-oss-120b": {
+      "input": 0.1,
+      "output": 0.5,
+      "source": "https://www.baseten.co/pricing/",
+      "as_of": "2026-11-22"
+    },
+    "baseten/reflection/Beam-1.0": {
+      "input": 0.4,
+      "output": 1.2,
+      "cached_input": 0.04,
+      "source": "https://www.baseten.co/pricing/",
+      "as_of": "2026-11-22"
+    },
+    "stepfun/step-5-preview": {
+      "input": 1,
+      "output": 2.7,
+      "cached_input": 0.1,
+      "source": "https://platform.stepfun.ai/docs/en/pricing/details",
+      "as_of": "2026-11-22"
+    },
+    "stepfun/step-3.7-flash": {
+      "input": 0.2,
+      "output": 1.15,
+      "cached_input": 0.04,
+      "source": "https://platform.stepfun.ai/docs/en/pricing/details",
+      "as_of": "2026-11-22"
+    },
+    "stepfun/step-3.5-flash": {
+      "input": 0.1,
+      "output": 0.3,
+      "cached_input": 0.02,
+      "source": "https://platform.stepfun.ai/docs/en/pricing/details",
+      "as_of": "2026-11-22"
+    },
+    "stepfun/step-3.5-flash-2603": {
+      "input": 0.1,
+      "output": 0.3,
+      "cached_input": 0.02,
+      "source": "https://platform.stepfun.ai/docs/en/pricing/details",
+      "as_of": "2026-11-22"
     }
   }
 }
